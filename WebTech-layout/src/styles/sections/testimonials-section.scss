@@ -1,0 +1,116 @@
+#testimonials-section {
+  .testimonials {
+    &__wrapper {
+      padding-top: 150px;
+      padding-bottom: 145px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+  }
+
+  .title-block {
+    margin-bottom: 10px
+  }
+
+  .users-block {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  #userl-control-left,
+  #userl-control-right {
+    height: 60px;
+    width: 60px;
+    border: 5px solid $colorPrimary;
+    color: $colorPrimary;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #userl-control-left {
+    background: url("../assets/icons/arrow-left.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #userl-control-right {
+    background: url("../assets/icons/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .users-list-wrapper {
+    width: 620px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #users-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .user {
+    height: 150px;
+    width: 150px;
+    transition: width .3s ease, height .3s ease;
+
+    &.central {
+      height: 200px;
+      width: 200px;
+    }
+
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .testimonials-list-wrapper {
+    width: 770px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #testimonials-list {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 720px;
+
+    &__text {
+      @include fontSettings(2rem, 3.2rem);
+      text-align: center;
+      margin-bottom: 40px;
+      color: $colorSubContent;
+    }
+
+    &__author-name {
+      @include fontSettings(2.6rem, 3.4rem);
+      letter-spacing: 1px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 8px;
+    }
+
+    &__author-position {
+      @include subTitle(1.4rem, 3rem, 2px);
+      width: fit-content;
+      color: $colorSubContent;
+    }
+  }
+}

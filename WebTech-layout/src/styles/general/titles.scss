@@ -1,0 +1,21 @@
+.h2 {
+  @include fontSettings(4rem, 4.6rem);
+  font-weight: 600;
+}
+
+.accent-part {
+  display: inline-block;
+  color: $colorPrimary;
+}
+
+.title-block {
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    @include verticalLine(100%);
+    position: absolute;
+    left: 0;
+  }
+}

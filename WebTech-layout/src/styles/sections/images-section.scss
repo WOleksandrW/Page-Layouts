@@ -1,0 +1,10 @@
+#images-section {
+  display: flex;
+
+  .images {
+    &__img-block {
+      height: 360px;
+      width: 360px;
+    }
+  }
+}

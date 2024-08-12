@@ -1,0 +1,47 @@
+#peculiarities-section {
+  background-color: $colorContentDark;
+  color: $colorContentLight;
+
+  .peculiarities {
+    &__wrapper {
+      padding-top: 145px;
+      padding-bottom: 145px;
+    }
+  }
+
+  #peculiarities-list {
+    display: grid;
+    column-gap: 25px;
+    row-gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .loader-block {
+      width: 1200px;
+      height: 256px;
+    }
+  }
+
+  .peculiarity {
+    &__img {
+      float: left;
+      margin-right: 10px;
+    }
+
+    &__details {
+      padding-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__title {
+      @include fontSettings(2rem, 2.4rem);
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    &__text {
+      @include fontSettings($fLineHeight: 150%);
+    }
+  }
+}

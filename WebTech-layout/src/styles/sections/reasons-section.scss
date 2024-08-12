@@ -1,0 +1,54 @@
+#reasons-section {
+  height: 1238px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/reasons-back.png");
+  background-color: rgba(246, 246, 246, 0.9);
+  background-blend-mode: overlay;
+
+  .reasons {
+    &__wrapper {
+      padding-top: 150px;
+    }
+  }
+
+  .title-block {
+    width: 350px;
+    margin-bottom: 84px;
+  }
+
+  #reasons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    width: 560px;
+  }
+
+  .reason {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &__number {
+      color: $colorContentDark;
+      font-weight: 400;
+      @include fontSettings(4.5rem);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    &:first-child .reason__number {
+      color: $colorPrimary;
+    }
+
+    &__title {
+      font-weight: 400;
+      @include fontSettings($fLineHeight: 3rem);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    &__text {
+      color: $colorSubContent;
+      @include fontSettings($fLineHeight: 3rem);
+    }
+  }
+}

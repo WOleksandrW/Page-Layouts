@@ -1,0 +1,54 @@
+.header {
+  width: $pageWidth;
+  color: $colorContentLight;
+  background-color: $colorContentDark;
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 250px 15px 156px;
+  }
+
+  .phone-number {
+    @include fontSettings($fLineHeight: 200%);
+  }
+
+  .nav-block {
+    background-color: $colorNavigationBack;
+    padding: 22px 135px;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &-icon {
+      height: 3rem;
+    }
+
+    &-title {
+      @include fontSettings(3rem);
+      color: $colorPrimary;
+    }
+  }
+
+  .link-list {
+    display: flex;
+    gap: 60px;
+  }
+
+  .nav-link {
+    @include fontSettings($fLineHeight: 150%);
+    color: $colorContentLight;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+}

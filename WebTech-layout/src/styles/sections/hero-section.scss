@@ -1,0 +1,61 @@
+#hero-section {
+  height: 870px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/hero-back.png");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  position: relative;
+  padding: 320px 0 0 140px;
+
+  .hero {
+    &__image {
+      height: 810px;
+      width: 825px;
+      background-image: url("../assets/images/businessman.png");
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .greeting-block {
+    display: flex;
+    flex-direction: column;
+    color: $colorContentLight;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 32px;
+    }
+
+    .number {
+      @include fontSettings(14rem, 18rem);
+      opacity: 0.2;
+    }
+
+    .line {
+      @include verticalLine(130px);
+    }
+
+    &__title {
+      font-family: "Montserrat", sans-serif;
+      @include fontSettings(5rem, 180%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      @include fontSettings($fLineHeight: 150%);
+      width: 600px;
+      margin-bottom: 60px;
+    }
+
+    &__btns-block {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

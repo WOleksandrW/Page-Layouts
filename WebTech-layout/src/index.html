@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Logo.svg') %>" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="contacts">
+      <p class="phone-number">+123 456 7890</p>
+      <ul class="social-list">
+        <li>
+          <a class="social-link" href="https://www.instagram.com/" target="_blank">
+            <img src="<%= require('./assets/icons/Instagram-white.svg') %>" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://dribbble.com/" target="_blank">
+            <img src="<%= require('./assets/icons/Dribbble-white.svg') %>" alt="dribbble">
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://twitter.com/" target="_blank">
+            <img src="<%= require('./assets/icons/Twitter-white.svg') %>" alt="twitter">
+          </a>
+        </li>
+        <li>
+          <a class="social-link" href="https://www.youtube.com/" target="_blank">
+            <img src="<%= require('./assets/icons/Youtube-white.svg') %>" alt="youtube">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav-block">
+      <div class="logo">
+        <img class="logo-icon" src="<%= require('./assets/icons/Logo.svg') %>" alt="logo">
+        <h2 class="logo-title">WebTech</h2>
+      </div>
+      <ul class="link-list">
+        <li>
+          <a href="" class="nav-link">Home</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">Pages</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">Services</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">Blog</a>
+        </li>
+        <li>
+          <a href="" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="greeting-block">
+        <div class="title-container">
+          <span class="number">01</span>
+          <div class="line"></div>
+          <h1 class="greeting-block__title">The Unique Creative 
+            <span class="accent-part">Design Agency</span>
+          </h1>
+        </div>
+        <p class="greeting-block__text">
+          Always on the lookout for the hi-tech advancements. Build not 
+          only a product that can sell well, but a platform through 
+          which to deliver it.
+        </p>
+        <div class="greeting-block__btns-block">
+          <button class="btn btn--ellipse btn--light btn--accent">Start Now</button>
+          <button class="btn btn--ellipse btn--light">Learn More</button>
+        </div>
+      </div>
+      <div class="hero__image"></div>
+    </section>
+    <section id="work-steps-section">
+      <div class="wrapper work-steps__wrapper">
+        <div class="title-block">
+          <h2 class="h2">
+            <span class="accent-part">How</span> 
+            we Works
+          </h2>
+        </div>
+        <div class="steps-list">
+          <div class="step">
+            <img src="<%= require('./assets/images/work_step-1.png') %>" alt="Planning">
+            <p class="step__title">Planning</p>
+          </div>
+          <div class="step">
+            <img src="<%= require('./assets/images/work_step-2.png') %>" alt="Design">
+            <p class="step__title">Design</p>
+          </div>
+          <div class="step">
+            <img src="<%= require('./assets/images/work_step-3.png') %>" alt="Development">
+            <p class="step__title">Development</p>
+          </div>
+          <div class="work-steps__arrow-1"></div>
+          <div class="work-steps__arrow-2"></div>
+        </div>
+      </div>
+    </section>
+    <section id="peculiarities-section">
+      <div class="wrapper peculiarities__wrapper">
+        <ul id="peculiarities-list">
+          <div class="loader-block">
+            <div class="loader"></div>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <section id="team-section">
+      <div class="wrapper team__wrapper">
+        <div class="team__info-block">
+          <div class="title-block">
+            <h2 class="h2">
+              <span class="accent-part">Our</span> 
+              Best Workers
+            </h2>
+          </div>
+          <button class="btn team__info-block__btn">View Team</button>
+        </div>
+        <ul id="members-list">
+          <div class="loader-block">
+            <div class="loader"></div>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <section id="reasons-section">
+      <div class="wrapper reasons__wrapper">
+        <div class="title-block">
+          <h2 class="h2">
+            Few Reasons
+            <span class="accent-part">Why Choose Us</span>
+          </h2>
+        </div>
+        <ul id="reasons-list">
+          <li class="reason">
+            <h3 class="reason__number">.01</h3>
+            <h4 class="reason__title">Clients</h4>
+            <p class="reason__text">Aliquam eu ante ante. Cras rutrum massa lacinia est lobortis maximus. Integer pellentesque nisl at odio porta iaculis. Vestibulum auctor libero a quam rhoncus.</p>
+          </li>
+          <li class="reason">
+            <h3 class="reason__number">.02</h3>
+            <h4 class="reason__title">Projects</h4>
+            <p class="reason__text">Aliquam eu ante ante. Cras rutrum massa lacinia est lobortis maximus. Integer pellentesque nisl at odio porta iaculis. Vestibulum auctor libero a quam rhoncus.</p>
+          </li>
+          <li class="reason">
+            <h3 class="reason__number">.03</h3>
+            <h4 class="reason__title">Reporting & Analysis</h4>
+            <p class="reason__text">Aliquam eu ante ante. Cras rutrum massa lacinia est lobortis maximus. Integer pellentesque nisl at odio porta iaculis. Vestibulum auctor libero a quam rhoncus.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="images-section">
+      <div class="images__img-block">
+        <img src="<%= require('./assets/images/images-1.png') %>" alt="image-1">
+      </div>
+      <div class="images__img-block">
+        <img src="<%= require('./assets/images/images-2.png') %>" alt="image-2">
+      </div>
+      <div class="images__img-block">
+        <img src="<%= require('./assets/images/images-3.png') %>" alt="image-3">
+      </div>
+      <div class="images__img-block">
+        <img src="<%= require('./assets/images/images-4.png') %>" alt="image-4">
+      </div>
+    </section>
+    <section id="testimonials-section">
+      <div class="wrapper testimonials__wrapper">
+        <div class="title-block">
+          <h2 class="h2">
+            <span class="accent-part">Our</span>
+            Testimonials
+          </h2>
+        </div>
+        <div class="users-block">
+          <button id="userl-control-left"></button>
+          <div class="users-list-wrapper">
+            <ul id="users-list">
+              <li class="user">
+                <img class="user__image" src="<%= require('./assets/images/testimonials_user-1.png') %>" alt="user-1" />
+              </li>
+              <li class="user">
+                <img class="user__image large" src="<%= require('./assets/images/testimonials_user-2.png') %>" alt="user-2" />
+              </li>
+              <li class="user">
+                <img class="user__image" src="<%= require('./assets/images/testimonials_user-3.png') %>" alt="user-3" />
+              </li>
+            </ul>
+          </div>
+          <button id="userl-control-right"></button>
+        </div>
+        <div class="testimonials-list-wrapper">
+          <ul id="testimonials-list">
+            <li class="testimonial">
+              <p class="testimonial__text">
+                Donec eget elit vel urna varius pharetra. Suspendisse sodales venenatis lorem nec tincidunt. Donec dignissim purus ut nulla ultricies.
+              </p>
+              <h4 class="testimonial__author-name">Ronald C. Hartung</h4>
+              <p class="testimonial__author-position">marketer</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="innovation-section">
+      <div class="wrapper innovation__wrapper">
+        <div class="innovation__info-block">
+          <h2 class="innovation__info-block__h2">
+            A New Era of
+            <span class="innovation__info-block__accent-part">Innovation</span>
+          </h2>
+          <p class="innovation__info-block__text">Always on the lookout for the hi-tech advancements. Build a product that will sell well</p>
+          <div class="innovation__info-block__btns-block">
+            <button class="btn btn--light btn--accent">Start Now</button>
+            <button class="btn btn--light">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="innovation__image"></div>
+    </section>
+    <section id="news-section">
+      <div class="wrapper news__wrapper">
+        <div class="title-block">
+          <h2 class="h2">
+            <span class="accent-part">Our</span>
+            News
+          </h2>
+        </div>
+        <div class="news-block">
+          <div class="news-main">
+            <div class="news-item__img-block">
+              <img src="<%= require('./assets/images/news-main.png') %>" alt="main news">
+              <span class="news-item__tag">Software</span>
+            </div>
+            <div class="news-item__info news-main__info">
+              <h4 class="news-item__title">Motion Animation And VR Headset</h4>
+              <div class="news-item__other-info news-main__other-info">
+                <p class="news-item__author">Emmajohnson</p>
+                <p class="news-item__date">May 17, 2019</p>
+              </div>
+              <p class="news-item__text news-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae est accumsan, efficitur velit eu, ullamcorper sapien. Suspendisse aliquam libero euismod, tempus nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae est accumsan, efficitur velit eu, ullamcorper sapien. Suspendisse aliquam libero euismod, tempus nisl. Vivamus bibendum in risus sit amet elementum. Vivamus sodales.</p>
+              <a href="" class="news-item__link">view details</a>
+            </div>
+          </div>
+          <ul id="news-list">
+            <li class="news-item">
+              <div class="news-item__img-block">
+                <img src="<%= require('./assets/images/news_item-1.png') %>" alt="news-1">
+                <span class="news-item__tag">Security</span>
+              </div>
+              <div class="news-item__info">
+                <h4 class="news-item__title">Awesome Tips to Become CEO Of Big NetWork Startup</h4>
+                <div class="news-item__other-info">
+                  <p class="news-item__author">Emmajohnson</p>
+                  <p class="news-item__date">May 17, 2019</p>
+                </div>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-item__img-block">
+                <img src="<%= require('./assets/images/news_item-2.png') %>" alt="news-2">
+                <span class="news-item__tag">New</span>
+              </div>
+              <div class="news-item__info">
+                <h4 class="news-item__title">Top 5 Amazing changing For The Social Media Industry</h4>
+                <div class="news-item__other-info">
+                  <p class="news-item__author">Emmajohnson</p>
+                  <p class="news-item__date">May 17, 2019</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="info-block">
+      <div class="about-block">
+        <h3 class="block-title">About us</h3>
+        <p class="about-block__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit 
+          amet turpis venenatis nulla dignissim scelerisque. Ut volutpat 
+          maximus ligula.
+        </p>
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="https://www.facebook.com/" class="social-link">
+              <img src="<%= require('./assets/icons/Facebook-white.svg') %>" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://web.telegram.org/" class="social-link">
+              <img src="<%= require('./assets/icons/Telegram-white.svg') %>" alt="telegram">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.linkedin.com/" class="social-link">
+              <img src="<%= require('./assets/icons/Linkedin-white.svg') %>" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.instagram.com/" class="social-link">
+              <img src="<%= require('./assets/icons/Instagram-white.svg') %>" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.youtube.com/" class="social-link">
+              <img src="<%= require('./assets/icons/Youtube-white.svg') %>" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="recent-post-block">
+        <h3 class="block-title">Recent post</h3>
+        <ul class="posts-list">
+          <li class="post-item">Motion Animation And VR Headset</li>
+          <li class="post-item">Awesome Tips to Become CEO Of Big NetWork Startup</li>
+          <li class="post-item">Top 5 Amazing changing For The Social Media Industry</li>
+        </ul>
+      </div>
+      <div class="contact-block">
+        <h3 class="block-title">Contact us</h3>
+        <ul id="contact-list">
+          <li class="contact-item contact-location">
+            <p>Address:</p>
+            <p>53  Hilltop Drive,Tx 79022</p>
+          </li>
+          <li class="contact-item contact-phone">
+            <p>Phone:</p>
+            <p>806-377-1600</p>
+          </li>
+          <li class="contact-item contact-email">
+            <p>Email:</p>
+            <p>example@example.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright-block">
+      <p class="copyright">Copyright &copy; 2021 webtech</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+#innovation-section {
+  background-color: $colorContentDark;
+  color: $colorContentLight;
+  position: relative;
+  overflow: hidden;
+
+  .innovation {
+    &__wrapper {
+      padding-top: 145px;
+      padding-bottom: 150px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__image {
+      width: 696px;
+      height: 865px;
+      background: url("../assets/images/innovation-image.png");
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+    }
+
+    &__info-block {
+      width: 600px;
+
+      &__h2 {
+        @include fontSettings(7rem, 8rem);
+        margin-bottom: 25px;
+      }
+
+      &__accent-part {
+        @include fontSettings(5.5rem, 7rem);
+      }
+
+      &__text {
+        @include fontSettings(2rem, 150%);
+      }
+
+      &__btns-block {
+        margin-top: 70px;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

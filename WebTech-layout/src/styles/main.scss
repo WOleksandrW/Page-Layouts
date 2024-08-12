@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 0 120px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/loader.scss";
+@import "./general/titles.scss";
+@import "./general/buttons.scss";
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/work-steps-section.scss";
+@import "./sections/peculiarities-section.scss";
+@import "./sections/team-section.scss";
+@import "./sections/reasons-section.scss";
+@import "./sections/images-section.scss";
+@import "./sections/testimonials-section.scss";
+@import "./sections/innovation-section.scss";
+@import "./sections/news-section.scss";
+
+.main {
+  width: $pageWidth;
+  flex: 1;
+  color: $colorContentDark;
+}

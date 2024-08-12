@@ -1,7 +1,4 @@
-# Page-Layouts
-List of implemented page layouts
-
-### WebTech layout
+# WebTech layout
 
 ![image](https://github.com/user-attachments/assets/0177eaf0-f63d-457f-bce3-4c7e060c01f0)
 

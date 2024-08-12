@@ -1,0 +1,76 @@
+#team-section {
+  .team {
+    &__wrapper {
+      padding-top: 150px;
+      padding-bottom: 145px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 32px;
+    }
+
+    &__info-block {
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 70px;
+
+      &__btn {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  #members-list {
+    display: flex;
+    gap: 5px;
+
+    .loader-block {
+      width: 872px;
+      height: 460px;
+    }
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img-block {
+      margin-bottom: 32px;
+      position: relative;
+      display: flex;
+      overflow: hidden;
+
+      &:hover .member__social-list {
+        transform: translate(0, 0);
+      }
+    }
+
+    &__social-list {
+      width: 100%;
+      height: 50px;
+      background-color: $colorPrimary;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      transform: translate(0, 100%);
+      transition: transform .3s ease;
+    }
+
+    &__name {
+      @include fontSettings(2.6rem, 3.4rem);
+      letter-spacing: 1px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 8px;
+    }
+
+    &__position {
+      @include subTitle(1.4rem, 3rem, 2px);
+      width: fit-content;
+      color: $colorSubContent;
+    }
+  }
+}

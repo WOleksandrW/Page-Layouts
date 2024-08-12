@@ -1,0 +1,52 @@
+#work-steps-section {
+  .work-steps {
+    &__wrapper {
+      padding-top: 100px;
+      padding-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 85px;
+    }
+
+    &__arrow-1,
+    &__arrow-2 {
+      position: absolute;
+      width: 156px;
+      height: 26px;
+      transform: translate(-50%, -50%);
+    }
+
+    &__arrow-1 {
+      background: url("../assets/images/line-1.svg");
+      left: 32%;
+      top: 65%;
+    }
+
+    &__arrow-2 {
+      background: url("../assets/images/line-2.svg");
+      left: 68%;
+      top: 35%;
+    }
+  }
+
+  .steps-list {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .step {
+    width: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+      @include fontSettings(3rem);
+    }
+  }
+}

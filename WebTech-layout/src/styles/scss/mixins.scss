@@ -1,0 +1,16 @@
+@mixin fontSettings($fSize: 1.6rem, $fLineHeight: 100%) {
+  font-size: $fSize;
+  line-height: $fLineHeight;
+}
+
+@mixin subTitle($fSize: 1.2rem, $fLineHeight: 100%, $fLetterSpace: 4px) {
+  @include fontSettings($fSize, $fLineHeight);
+  text-transform: uppercase;
+  letter-spacing: $fLetterSpace;
+}
+
+@mixin verticalLine($height: 100px) {
+  width: 3px;
+  height: $height;
+  background-color: $colorPrimary;
+}
