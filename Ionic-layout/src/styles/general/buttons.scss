@@ -1,0 +1,68 @@
+.btn {
+  background-color: $colorPrimary;
+  color: $colorContentLight;
+  border: 2px solid $colorPrimary;
+  padding: 8px 10px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: lighten($colorPrimary, 10%);
+
+    &:not(.btn--transparent) {
+      background-color: lighten($colorPrimary, 10%);
+    }
+
+    &::after {
+      animation: move .3s infinite alternate;
+    }
+  }
+
+  &:active {
+    border-color: darken($colorPrimary, 10%);
+
+    &:not(.btn--transparent) {
+      background-color: darken($colorPrimary, 10%);
+    }
+
+    &::after {
+      animation: move .2s infinite alternate;
+    }
+  }
+
+  &::after {
+    content: "\2794";
+    position: absolute;
+    right: 10px;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $colorPrimary;
+
+    &:hover {
+      color: lighten($colorPrimary, 10%);
+    }
+
+    &:active {
+      color: darken($colorPrimary, 10%);
+    }
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(20%, 0);
+  }
+}

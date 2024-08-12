@@ -1,0 +1,40 @@
+#hero-section {
+  .hero {
+    &__wrapper {
+      padding-top: 80px;
+      padding-bottom: 540px;
+      position: relative;
+    }
+
+    &__btns-block {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__image {
+      width: 1120px;
+      height: 950px;
+      background: url("../assets/images/hero-image.png");
+      position: absolute;
+      z-index: -1;
+      top: 160px;
+    }
+  }
+
+  .greetings-block {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+      width: 590px;
+      font-size: 2rem;
+      line-height: 3.2rem;
+    }
+  }
+}

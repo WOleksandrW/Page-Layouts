@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ionic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Logo.svg') %>" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="logo-block">
+        <img src="<%= require('./assets/icons/Logo.svg') %>" alt="logo">
+        <h2 class="logo-title">ionic</h2>
+      </div>
+      <nav class="header__nav">
+        <ul class="nav-list">
+          <li>
+            <a href="" class="nav-link">Platform</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Soilutions</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Resources</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Developers</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Company</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">Pricing</a>
+          </li>
+        </ul>
+        <div class="nav-end">
+          <a href="" class="nav-link">Sign Up</a>
+          <button class="btn">Start Free</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper hero__wrapper">
+        <div class="greetings-block">
+          <h1 class="h1 greetings-block__title">A better way to build modern apps at scale.</h1>
+          <p class="greetings-block__text">
+            Our suite of developer-friendly products helps you build, secure, and deliver enterprise-grade apps on any platform — with support from the Ionic team every step of the way.
+          </p>
+          <div class="hero__btns-block">
+            <button class="btn btn--bold">Get Started</button>
+            <button class="btn btn--bold btn--transparent">Talk to sales</button>
+          </div>
+        </div>
+        <div class="hero__image"></div>
+      </div>
+    </section>
+    <section id="overview-section">
+      <div class="wrapper overview__wrapper">
+        <div class="overview__introduction">
+          <h4 class="subtitle">Overview</h4>
+          <h2 class="h2">Seamless cross-platform mobile development.</h2>
+          <p class="p">Let’s be honest. When it comes to mobile app experiences, the bar has been set high. In today’s world, people expect seamless, secure, lightning-fast apps that are fine-tuned to their particular needs. If you can’t deliver that kind of mobile app experience, you can’t expect to build out your business.</p>
+          <p class="p">For enterprise developers aiming to deliver a seamless digital experience that follows them wherever they are, Ionic is here to help. Our powerful tools and services make it easy to deliver stunning mobile experiences across iOS, Android, and the Web—all with a single codebase that works everywhere. Move fast, spend less, create more, and build better.</p>
+          <button class="btn btn--transparent">See what Ionic can do for you</button>
+        </div>
+        <ul class="feature-list">
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature_icon-1.svg') %>" alt="Truly native">
+            <h3 class="h3">Truly native</h3>
+            <p class="p">Access the full Native SDKs on each platform, and powerful pre-built solutions for authentication and secure storage.</p>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature_icon-2.svg') %>" alt="Truly cross-platform">
+            <h3 class="h3">Truly cross-platform</h3>
+            <p class="p">Slash your development time and costs with a platform that lets you build once and deploy anywhere.</p>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature_icon-3.svg') %>" alt="Powered by the Web">
+            <h3 class="h3">Powered by the Web</h3>
+            <p class="p">If you know HTML, CSS, and JavaScript, you already know how to build stunning mobile apps with Ionic.</p>
+          </li>
+        </ul>
+        <ul class="partners-list">
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-1.svg') %>" alt="partner-1">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-2.svg') %>" alt="partner-2">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-3.svg') %>" alt="partner-3">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-4.svg') %>" alt="partner-4">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-5.svg') %>" alt="partner-5">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-6.svg') %>" alt="partner-6">
+          </li>
+          <li class="partner">
+            <img src="<%= require('./assets/icons/Partner_icon-7.svg') %>" alt="partner-7">
+          </li>
+        </ul>
+        <div class="overview__image"></div>
+      </div>
+    </section>
+    <section id="approaches-section">
+      <div class="wrapper approaches__wrapper">
+        <div class="approaches__introduction">
+          <div class="approaches__introduction__titles-block">
+            <h4 class="subtitle">Build / Secure / Deliver</h4>
+            <h2 class="h2">The Ionic approach.</h2>
+          </div>
+          <p class="p approaches__introduction__text">Ionic’s full-service platform allows businesses to accelerate web-based app development without having to bring in outside talent.</p>
+        </div>
+        <ul class="approaches-list">
+          <li class="approach">
+            <img class="approach__image" src="<%= require('./assets/icons/Approach_icon-1.svg') %>" alt="Build">
+            <h3 class="h3">Build</h3>
+            <p class="p">Leverage the power of the web to build and develop better critical apps faster with your existing web talent.</p>
+          </li>
+          <li class="approach">
+            <img class="approach__image" src="<%= require('./assets/icons/Approach_icon-2.svg') %>" alt="Secure">
+            <h3 class="h3">Secure</h3>
+            <p class="p">Enjoy open source benefits with the security and peace of mind from enterprise grade support and reliability.</p>
+          </li>
+          <li class="approach">
+            <img class="approach__image" src="<%= require('./assets/icons/Approach_icon-3.svg') %>" alt="Deliver">
+            <h3 class="h3">Deliver</h3>
+            <p class="p">Publish your apps with ease, deliver them continuously, and deploy live updates in minutes.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="case-studies-section">
+      <div class="wrapper case-studies__wrapper">
+        <div class="poster-block">
+          <div class="case-studies__introduction">
+            <h4 class="subtitle">Case studies</h4>
+            <h2 class="h2">Ionic in action.</h2>
+            <p class="p case-studies__introduction__text">The app development industry is changing, which is why we make sure our clients are ready to change with it. A world-class app is the result of world-class products and services. See how Ionic has helped countless businesses, big and small, deliver award-winning, mission-critical apps.</p>
+            <ul class="studies-list">
+              <li class="study-item">
+                <img src="<%= require('./assets/icons/Studies_icon-1.svg') %>" alt="Study-1">
+              </li>
+              <li class="study-item">
+                <img src="<%= require('./assets/icons/Studies_icon-2.svg') %>" alt="Study-2">
+              </li>
+              <li class="study-item">
+                <img src="<%= require('./assets/icons/Studies_icon-3.svg') %>" alt="Study-3">
+              </li>
+              <li class="study-item">
+                <img src="<%= require('./assets/icons/Studies_icon-4.svg') %>" alt="Study-4">
+              </li>
+            </ul>
+          </div>
+          <div class="poster">
+            <img src="<%= require('./assets/icons/Amtrak-icon.svg') %>" alt="">
+            <p class="p">Amtrak delivers a cutting-edge mobile experience to riders, while accelerating development timelines, reducing risk, and improving operational agility.</p>
+            <button class="btn">See all of our Case Studies</button>
+          </div>
+        </div>
+        <div class="ebook-block">
+          <img src="<%= require('./assets/images/case-studies-image-2.png') %>" alt="studies">
+          <div class="ebook-block__text-block">
+            <p class="ebook-block__text">
+              <span class="bold-part">Get the facts you need to make the right decision.</span>
+              We wrote a guide on everything you need to know.
+            </p>
+            <button class="btn btn--transparent">Read our free eBook</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resources-section">
+      <div class="wrapper resources__wrapper">
+        <div class="resources__introduction">
+          <div class="resources__introduction__titles-block">
+            <h4 class="subtitle">Resources</h4>
+            <h2 class="h2">A deep dive into the Ionic stack.</h2>
+          </div>
+          <div class="resources__introduction__text-block">
+            <p class="p">Our Articles, Webinars, and Case Studies give you the education and insights you need to succeed with Ionic.</p>
+            <button class="btn btn--transparent">Visit our Resource Center</button>
+          </div>
+        </div>
+        <ul class="resources-list">
+          <li class="resource">
+            <div class="resource__img-block">
+              <img src="<%= require('./assets/icons/Resource_icon-1.svg') %>" alt="Webinars">
+            </div>
+            <div class="resource__content-block">
+              <h3 class="h3">Webinars</h3>
+              <p class="p">Live and recorded tech talks, product demos, and deep dives with industry experts.</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__img-block">
+              <img src="<%= require('./assets/icons/Resource_icon-2.svg') %>" alt="Articles">
+            </div>
+            <div class="resource__content-block">
+              <h3 class="h3">Articles</h3>
+              <p class="p">Timely perspectives on industry news, product updates, and competitive comparisons.</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__img-block">
+              <img src="<%= require('./assets/icons/Resource_icon-3.svg') %>" alt="Case Studies">
+            </div>
+            <div class="resource__content-block">
+              <h3 class="h3">Case Studies</h3>
+              <p class="p">Real customers, in their own words, on why they chose Ionic and what it’s meant for them.</p>
+            </div>
+          </li>
+          <li class="resource">
+            <div class="resource__img-block">
+              <img src="<%= require('./assets/icons/Resource_icon-4.svg') %>" alt="Videos">
+            </div>
+            <div class="resource__content-block">
+              <h3 class="h3">Videos</h3>
+              <p class="p">Watch recorded demos, conference talks, deep dive trainings and more.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="action-section">
+      <div class="action__title-block">
+        <h3 class="action__title">Get up and running with Ionic quickly.</h3>
+      </div>
+      <div class="action__btns-block">
+        <button class="btn btn--bold">Get a free demo</button>
+        <button class="btn btn--bold btn--transparent">Talk to sales</button>
+      </div>
+      <div class="action__image-1"></div>
+      <div class="action__image-2"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <nav class="footer__nav">
+        <div class="logo-block">
+          <img src="<%= require('./assets/icons/Logo.svg') %>" alt="logo">
+          <h2 class="logo-title">ionic</h2>
+        </div>
+        <ul class="blocks-list">
+          <li class="block">
+            <h3 class="block__title">The Platform</h3>
+            <ul class="block__links-list">
+              <li>
+                <a href="" class="nav-link">Overview</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Build</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Secure</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Deliver</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Why Ionic?</a>
+              </li>
+            </ul>
+          </li>
+          <li class="block">
+            <h3 class="block__title">Products</h3>
+            <ul class="block__links-list">
+              <li>
+                <a href="" class="nav-link">Framework</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Capacitor</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Appflow</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Identity Vault</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Secure Storage</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Auth Connect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="block">
+            <h3 class="block__title">Resources</h3>
+            <ul class="block__links-list">
+              <li>
+                <a href="" class="nav-link">Resource Center</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Blog</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Articles</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Webinares</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Case Studies</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Videos</a>
+              </li>
+            </ul>
+          </li>
+          <li class="block">
+            <h3 class="block__title">Company</h3>
+            <ul class="block__links-list">
+              <li>
+                <a href="" class="nav-link">About us</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Customers</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Contact</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Careers</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Privacy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="block">
+            <h3 class="block__title">Support</h3>
+            <ul class="block__links-list">
+              <li>
+                <a href="" class="nav-link">Help Center</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Partners</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Advisory</a>
+              </li>
+              <li>
+                <a href="" class="nav-link">Enterprise Guide</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__under-block">
+        <p class="copyright">
+          Copyright &copy; 2021 Ionic
+          <a class="copyright__link" href="">Terms</a>
+          <a class="copyright__link" href="">Privacy</a>
+        </p>
+        <ul class="socials-list">
+          <li>
+            <a class="social-link" href="https://twitter.com/">
+              <img src="<%= require('./assets/icons/Twitter-gray.svg') %>" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://github.com/">
+              <img src="<%= require('./assets/icons/Github-gray.svg') %>" alt="github">
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.facebook.com/">
+              <img src="<%= require('./assets/icons/Facebook-gray.svg') %>" alt="facebook">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

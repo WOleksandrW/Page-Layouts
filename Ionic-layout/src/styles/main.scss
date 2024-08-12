@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  padding: 0 160px;
+}
+
+@import "./scss/variables.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/overview-section.scss";
+@import "./sections/approaches-section.scss";
+@import "./sections/case-studies-section.scss";
+@import "./sections/resources-section.scss";
+@import "./sections/action-section.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: $colorContent;
+  width: $pageWidth;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-title {
+  font-size: 2rem;
+  color: $colorTitle;
+}

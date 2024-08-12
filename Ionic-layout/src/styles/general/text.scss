@@ -1,0 +1,50 @@
+.h1 {
+  font-size: 8.8rem;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: $colorTitle;
+}
+
+.h2 {
+  font-size: 6.4rem;
+  line-height: 100%;
+  color: $colorTitle;
+}
+
+.h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $colorTitle;
+}
+
+.subtitle {
+  color: $colorSubContent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.p {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.nav-link {
+  color: $colorLink;
+  font-size: 1.4rem;
+  line-height: 100%;
+  transition: color .3s ease;
+
+  &:hover {
+    color: lighten($colorPrimary, 20%);
+  }
+
+  &:active {
+    color: darken($colorPrimary, 20%);
+  }
+}
+
+.bold-part {
+  font-weight: 700;
+}

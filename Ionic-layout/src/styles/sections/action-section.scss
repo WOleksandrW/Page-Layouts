@@ -1,0 +1,49 @@
+#action-section {
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+
+  .action {
+    &__title-block {
+      background-color: $colorBackDark;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 168px;
+    }
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 5.4rem;
+      color: $colorContentLight;
+      width: 310px;
+    }
+
+    &__btns-block {
+      background-color: $colorBack;
+      padding-left: 100px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    &__image-1 {
+      width: 116px;
+      height: 278px;
+      background: url("../assets/images/action-image-1.png");
+      position: absolute;
+      left: 20px;
+      top: -160px;
+    }
+  
+    &__image-2 {
+      width: 160px;
+      height: 300px;
+      background: url("../assets/images/action-image-2.png");
+      position: absolute;
+      right: 0;
+      bottom: -110px;
+    }
+  }
+}

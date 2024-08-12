@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+
+  &__wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-end {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

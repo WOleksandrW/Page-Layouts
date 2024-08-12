@@ -1,0 +1,75 @@
+#case-studies-section {
+  .case-studies {
+    &__wrapper {
+      padding-top: 120px;
+      padding-bottom: 150px;
+      display: flex;
+      flex-direction: column;
+      gap: 260px;
+    }
+
+    &__introduction {
+      width: 452px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &__text {
+        width: 420px;
+        margin: 8px 0;
+      }
+    }
+  }
+
+  .poster-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .studies-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .study-item {
+    height: 40px;
+  }
+
+  .poster {
+    width: 544px;
+    height: 480px;
+    padding: 48px;
+    background: url("../assets/images/case-studies-image-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $colorContentLight;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  .ebook-block {
+    display: flex;
+
+    &__text-block {
+      flex: 1;
+      background-color: $colorBackLight;
+      padding: 36px 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 80px;
+    }
+
+    &__text {
+      font-size: 3.2rem;
+      line-height: 3.6rem;
+      color: $colorTitle;
+    }
+  }
+}

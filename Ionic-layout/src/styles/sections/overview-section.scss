@@ -1,0 +1,56 @@
+#overview-section {
+  .overview {
+    &__wrapper {
+      padding-bottom: 120px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 135px;
+    }
+
+    &__introduction {
+      width: 470px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    &__image {
+      height: 845px;
+      width: 600px;
+      background: url("../assets/images/overview-image.png");
+      position: absolute;
+      z-index: -1;
+      top: -100px;
+      right: 0;
+    }
+  }
+
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__icon {
+      width: 68px;
+      height: 68px;
+    }
+  }
+
+  .partners-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .partner {
+    height: 40px;
+  }
+}
