@@ -1,0 +1,28 @@
+#subscribe-section {
+  .subscribe-section {
+    &__wrapper {
+      padding-top: 72px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      text-align: center;
+    }
+  }
+
+  .input-block {
+    width: 800px;
+    padding: 12px 16px 12px 46px;
+    border-radius: 35px;
+    background-color: $colorBack;
+    display: flex;
+    gap: 20px;
+
+    &__input {
+      flex: 1;
+      border: none;
+      outline: none;
+    }
+  }
+}

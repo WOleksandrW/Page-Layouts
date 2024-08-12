@@ -1,0 +1,47 @@
+.btn {
+  background: linear-gradient(165deg, lighten($colorPrimary, 10%), darken($colorPrimary, 10%), lighten($colorPrimary, 10%));
+  color: $colorContentLight;
+  border: none;
+  border-radius: 24px;
+  @include fontSettings(2rem);
+  padding: 30px 44px;
+  font-weight: 600;
+  cursor: pointer;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position .3s ease,
+              box-shadow .3s ease;
+
+  &--ellipse {
+    border-radius: 100px;
+  }
+
+  &--small {
+    font-size: 1.6rem;
+    padding: 16px 44px;
+    font-weight: 500;
+  }
+
+  &--big,
+  &--large {
+    font-size: 2.5rem;
+  }
+
+  &--big {
+    padding: 32px 48px;
+  }
+
+  &--large {
+    padding: 40px 84px;
+  }
+
+  &:hover {
+    background-position: right;
+    box-shadow: 0px 0px 10px 3px lighten($colorPrimary, 10%);
+  }
+
+  &:active {
+    background-position: center;
+    box-shadow: 0px 0px 10px 5px darken($colorPrimary, 10%);
+  }
+}

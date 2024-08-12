@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoTrip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Favicon.svg') %>" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <h3 class="logo">GoTrip</h3>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li>
+            <a class="link nav__link active-link" href="">Home</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Services</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Pricing</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__end header__nav__end">
+          <a class="link nav__link" href="">Sign up</a>
+          <button class="btn btn--ellipse btn--small">Login</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper hero-section__wrapper">
+        <div class="greetings">
+          <p class="greetings__subtitle">explore the world</p>
+          <h1 class="h1 greetings__title">Explore The Natural Beauty Of Halmahera With Us</h1>
+          <p class="text2 greetings__text">explore the beauty of god's earth in a beautiful forest and have fun</p>
+          <button class="btn btn--big">Explore Now</button>
+        </div>
+        <div class="hero-section__image"></div>
+        <div class="hero-section__icon-1 mask-icon dotes-icon"></div>
+        <div class="hero-section__icon-2 mask-icon lines-icon"></div>
+        <div class="hero-section__icon-3 mask-icon lines-icon"></div>
+        <div class="hero-section__icon-4 mask-icon dotes-icon"></div>
+      </div>
+    </section>
+    <section id="destination-section">
+      <div class="wrapper destination-section__wrapper">
+        <div class="destination-section__introduction">
+          <h3 class="h3">Choice Of</h3>
+          <h2 class="h1">Destinations</h2>
+          <p class="text2 destination-section__introduction__text">explore the beauty of god's earth in a beautiful forest and have fun</p>
+          <button class="btn">Explore Now</button>
+        </div>
+        <div class="carousel">
+          <button id="move-destination-list" class="carousel__btn-control">
+            <span class="mask-icon chevron-icon carousel__btn-control__icon"></span>
+          </button>
+          <div class="carousel__wrapper">
+            <ul id="destination-list" class="carousel__list">
+              <li class="carousel__item">
+                <img src="<%= require('./assets/images/destination-image-1.png') %>" alt="">
+              </li>
+              <li class="carousel__item">
+                <img src="<%= require('./assets/images/destination-image-2.png') %>" alt="">
+              </li>
+              <li class="carousel__item">
+                <img src="<%= require('./assets/images/destination-image-3.png') %>" alt="">
+              </li>
+              <li class="carousel__item">
+                <img src="<%= require('./assets/images/destination-image-4.png') %>" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial-section">
+      <div class="wrapper testimonial-section__wrapper">
+        <img src="<%= require('./assets/images/testimonial-section-image.png') %>" alt="">
+        <div class="testimonial-section__content-container">
+          <h2 class="h2">What do customers say about us?</h2>
+          <div class="testimonial">
+            <div class="testimonial__user">
+              <div class="testimonial__user__avatar">
+                <img src="<%= require('./assets/images/testimonial-user-1.png') %>" alt="">
+              </div>
+              <div class="testimonial__user__info">
+                <h3 class="h3">Alpanasap</h3>
+                <p class="text2">Japung, Indonesia</p>
+              </div>
+            </div>
+            <p class="text2">Very satisfying service makes it comfortable, a beautiful place in the world.</p>
+            <div class="testimonial__rating">
+              <div class="mask-icon star-icon testimonial__rating__star fill"></div>
+              <div class="mask-icon star-icon testimonial__rating__star fill"></div>
+              <div class="mask-icon star-icon testimonial__rating__star fill"></div>
+              <div class="mask-icon star-icon testimonial__rating__star"></div>
+              <div class="mask-icon star-icon testimonial__rating__star"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="action-section">
+      <div class="wrapper action-section__wrapper">
+        <h3 class="h3 action-section__title">Prepare Yourself And Start Exploring With Us.</h3>
+        <p class="text1">There's the best discount for you today.</p>
+        <button class="btn action-section__btn">Get Started</button>
+        <div class="action-section__icon-1 mask-icon dotes-icon"></div>
+        <div class="action-section__icon-2 mask-icon dotes-icon"></div>
+      </div>
+    </section>
+    <section id="subscribe-section">
+      <div class="wrapper subscribe-section__wrapper">
+        <h2 class="h2">Subscribe <br> To Our Newsletter</h2>
+        <div class="input-block">
+          <input type="email" class="input-block__input text2" placeholder="Yourmail@mail.com">
+          <button class="btn btn-large">Subscribe</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <h3 class="logo footer__logo">GoTrip</h3>
+      <nav class="nav footer__nav">
+        <ul class="nav__list">
+          <li>
+            <a class="link nav__link" href="">Home</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Services</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Pricing</a>
+          </li>
+          <li>
+            <a class="link nav__link" href="">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__end footer__nav__end">
+          <a class="link nav__link" href="">Sign up</a>
+          <button class="btn btn--ellipse btn--small">Login</button>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

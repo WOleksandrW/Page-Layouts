@@ -1,0 +1,86 @@
+#destination-section {
+  .destination-section {
+    &__wrapper {
+      padding-top: 80px;
+      padding-bottom: 100px;
+      padding-right: 0;
+      display: flex;
+      gap: 50px;
+    }
+
+    &__introduction {
+      min-width: 456px;
+      width: 456px;
+
+      &__text {
+        margin-top: 15px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .carousel {
+    position: relative;
+
+    &__btn-control {
+      height: 68px;
+      width: 68px;
+      background-color: $colorPrimary;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      transform: translate(0, -50%);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .3s ease;
+
+      &__icon {
+        display: inline-block;
+        height: 28px;
+        width: 24px;
+        background-color: $colorContentLight;
+      }
+
+      &:hover {
+        background-color: lighten($colorPrimary, 10%);
+      }
+
+      &:active {
+        background-color: darken($colorPrimary, 20%);
+      }
+    }
+
+    &__wrapper {
+      width: 835px;
+      height: 456px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      height: 100%;
+      position: absolute;
+    }
+
+    &__item {
+      display: flex;
+      width: 335px;
+      height: 402px;
+      transition: width .3s ease,
+                  height .3s ease;
+
+      &.active {
+        width: 380px;
+        height: 100%;
+      }
+    }
+  }
+}

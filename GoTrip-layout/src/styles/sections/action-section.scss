@@ -1,0 +1,45 @@
+#action-section {
+  .action-section {
+    &__wrapper {
+      margin-top: 100px;
+      margin-bottom: 60px;
+      padding-top: 116px;
+      padding-bottom: 116px;
+      background-color: $colorBack;
+      border-radius: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    &__title {
+      width: 520px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+
+    &__icon-1,
+    &__icon-2 {
+      height: 84px;
+      width: 64px;
+      background-color: lighten($colorPrimary, 10%);
+      position: absolute;
+    }
+
+    &__icon-1 {
+      top: 74px;
+      right: 80px;
+    }
+
+    &__icon-2 {
+      bottom: 56px;
+      left: 74px;
+      transform: rotate(180deg);
+    }
+  }
+}

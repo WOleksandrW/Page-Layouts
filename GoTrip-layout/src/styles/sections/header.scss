@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  color: $colorContentLight;
+
+  &__wrapper {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    gap: 236px;
+
+    &__end {
+      gap: 24px;
+    }
+  }
+}

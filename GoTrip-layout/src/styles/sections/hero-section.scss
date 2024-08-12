@@ -1,0 +1,88 @@
+#hero-section {
+  background-color: $colorSecondary;
+  background: linear-gradient(165deg, $colorSecondary, darken($colorSecondary, 30%));
+  clip-path: polygon(0% 0%, 0% 85%, 50% 100%, 100% 85%, 100% 0%);
+
+  .hero-section {
+    &__wrapper {
+      padding-top: 180px;
+      padding-bottom: 200px;
+      position: relative;
+    }
+
+    &__image {
+      background: url("../assets/images/hero-image.png");
+      width: 546px;
+      height: 814px;
+      position: absolute;
+      bottom: 0;
+      right: 144px;
+      z-index: -2;
+    }
+
+    &__icon-1,
+    &__icon-2,
+    &__icon-3,
+    &__icon-4 {
+      position: absolute;
+      background-color: lighten($colorSecondary, 15%);
+      z-index: -1;
+    }
+
+    &__icon-2,
+    &__icon-3 {
+      width: 172px;
+      height: 52px;
+    }
+
+    &__icon-1 {
+      width: 48px;
+      height: 64px;
+      top: 172px;
+      left: 700px;
+    }
+
+    &__icon-2 {
+      top: 236px;
+      right: 96px;
+    }
+
+    &__icon-3 {
+      bottom: 100px;
+      right: 564px;
+    }
+
+    &__icon-4 {
+      width: 64px;
+      height: 84px;
+      bottom: 172px;
+      right: 56px;
+    }
+  }
+
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 604px;
+
+    &__subtitle {
+      color: $colorContentLight;
+      @include fontSettings(1.8rem);
+      padding: 16px 32px;
+      border-radius: 15px;
+      background-color: transparentize($colorBack, 0.75);
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      color: $colorContentLight;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-bottom: 68px;
+      width: 520px;
+    }
+  }
+}
