@@ -1,7 +1,9 @@
 # Page-Layouts
 List of implemented page layouts
 
-### WebTech layout
+---
+
+## WebTech layout
 
 ![image](https://github.com/user-attachments/assets/0177eaf0-f63d-457f-bce3-4c7e060c01f0)
 
@@ -9,7 +11,9 @@ List of implemented page layouts
 
 [Deploy](https://serene-sable-7be2a0.netlify.app/)
 
-### Ionic layout
+---
+
+## Ionic layout
 
 ![image](https://github.com/user-attachments/assets/e0b58375-e2bf-4713-857f-ecde61b6c510)
 
@@ -17,7 +21,9 @@ List of implemented page layouts
 
 [Deploy](https://merry-profiterole-a76c51.netlify.app/)
 
-### GoTrip layout
+---
+
+## GoTrip layout
 
 ![image](https://github.com/user-attachments/assets/fe6cafdd-093c-4d54-8815-3c592af84db1)
 
@@ -25,7 +31,9 @@ List of implemented page layouts
 
 [Deploy](https://illustrious-cheesecake-f4176f.netlify.app/)
 
-### Antools layout
+---
+
+## Antools layout
 
 ![image](https://github.com/user-attachments/assets/62e50379-d503-404a-bdc5-3715f074251b)
 
@@ -33,7 +41,9 @@ List of implemented page layouts
 
 [Deploy](https://polite-brigadeiros-902d79.netlify.app/)
 
-### TravelixPro layout
+---
+
+## TravelixPro layout
 
 ![image](https://github.com/user-attachments/assets/ac2c95c2-30d9-4f74-94a3-f793cd164bc9)
 ![image](https://github.com/user-attachments/assets/7f64ac2c-d7d2-4124-a8f9-3e8d5b77c4d7)
@@ -41,3 +51,5 @@ List of implemented page layouts
 [Layout](https://www.figma.com/file/cDOfmVhAeEoMegyeikzwJ4/tg%3A-%40maket_figma-TravelixPro---%D0%A2%D1%83%D1%80%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE?type=design&node-id=0%3A1&t=mNQSp00lFSswXHKq-1)
 
 [Deploy](https://ornate-valkyrie-a7dbfc.netlify.app/)
+
+---
