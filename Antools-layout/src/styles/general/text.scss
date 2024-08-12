@@ -1,0 +1,72 @@
+.h1,
+.h2,
+.h3,
+.h4 {
+  color: $colorTitle;
+  font-weight: 500;
+}
+
+.h1 {
+  @include fontSettings(5rem, 140%);
+}
+
+.h2 {
+  @include fontSettings(4.8rem, 130%);
+}
+
+.h3 {
+  @include fontSettings(2.4rem);
+}
+
+.h4 {
+  @include fontSettings(2rem);
+}
+
+.subtitle {
+  @include fontSettings(1.8rem);
+  color: $colorSecondary;
+}
+
+.text {
+  @include fontSettings(1.8rem, 3rem);
+}
+
+.subtext {
+  @include fontSettings($fLineHeight: 3rem);
+}
+
+.link {
+  @include fontSettings();
+  color: $colorContent;
+  display: inline-flex;
+  transition: color .3s ease;
+
+  &__icon {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: $colorContent;
+    margin-left: 5px;
+    transition: background-color .3s ease;
+  }
+
+  &:hover {
+    color: lighten($colorPrimary, 20%);
+
+    .link__icon {
+      background-color: lighten($colorPrimary, 20%);
+    }
+  }
+
+  &:active {
+    color: darken($colorPrimary, 20%);
+
+    .link__icon {
+      background-color: darken($colorPrimary, 20%);
+    }
+  }
+}
+
+.accent-part {
+  color: $colorPrimary;
+}

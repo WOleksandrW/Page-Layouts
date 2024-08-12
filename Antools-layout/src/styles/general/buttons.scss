@@ -1,0 +1,72 @@
+.btn {
+  color: $colorAccent;
+  background-color: $colorPrimary;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  @include fontSettings($fLineHeight: 150%);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease,
+              color .3s ease;
+
+  &:hover {
+    background-color: lighten($colorPrimary, $amount: 5%);
+  }
+
+  &:active {
+    background-color: darken($colorPrimary, $amount: 10%);
+  }
+
+  &--small {
+    padding: 8px 36px;
+  }
+
+  &--large {
+    font-size: 2rem;
+    padding: 16px 40px;
+  }
+
+  &--special {
+    color: $colorPrimary;
+    background-color: transparent;
+    border: 1px solid $colorBorder;
+
+    &:hover {
+      background-color: transparentize($colorBack, 0.6);
+    }
+
+    &:active {
+      background-color: transparentize($colorBack, 0.8);
+    }
+  }
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  transition: background-color .3s ease;
+
+  &__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: $colorContent;
+    transition: background-color .3s ease;
+  }
+
+  &:hover {
+    background-color: $colorBack;
+  }
+
+  &:active {
+    background-color: $colorBack;
+  }
+}

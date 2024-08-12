@@ -1,0 +1,96 @@
+.tool-item {
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: background-color .3s ease,
+              border-color .3s ease,
+              transform .1s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    @include glowDote(0, $colorGlow1, 70px, 40px);
+    right: 30px;
+    top: 10px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &:hover {
+    background-color: transparentize($colorBack, 0.4);
+    border-color: $colorBorder;
+    animation: jump .3s ease;
+    transform: translate(0, -20px);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:not(:hover) {
+    .tool-item__btn:not(:active) {
+      background-color: transparent;
+      color: $colorContent;
+    }
+
+    .tool-item__titles {
+      opacity: 0.5;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: opacity .3s ease;
+  }
+
+  &__btns-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__btn-like {
+    &:hover {
+      .tool-item__btn-like__icon {
+        background-color: $colorTertiary;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+
+  &--small {
+    padding: 26px 20px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, -30px);
+  }
+  66% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}

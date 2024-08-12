@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antools</title>
+  <link rel="icon" href="<%= require('./assets/icons/Logotype.svg') %>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="logo">
+        <img src="<%= require('./assets/icons/Logotype.svg') %>" alt="">
+        <h2 class="logo__title">antools.</h2>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="" class="link">Home</a>
+          </li>
+          <li>
+            <a href="" class="link">Categories <span class="link__icon chevron-icon"></span></a>
+          </li>
+          <li>
+            <a href="" class="link">My Collections</a>
+          </li>
+          <li>
+            <a href="" class="link">Blog</a>
+          </li>
+        </ul>
+        <div class="nav__end">
+          <a href="" class="link">Login</a>
+          <button class="btn">Sign Up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper hero-section__wrapper">
+        <div class="greetings">
+          <h1 class="h1">
+            Awesome tools for Designer & Developer
+            <span class="accent-part">.</span>
+          </h1>
+          <p class="text greetings__text">Antool is a web collection of information on paid or free Design and Development tools</p>
+          <div class="input-block">
+            <div class="input-block__icon search-icon"></div>
+            <input class="input-block__input" type="text" placeholder="find more than 430+ tools...">
+            <button class="btn">Search</button>
+          </div>
+        </div>
+        <ul class="social-list">
+          <li>
+            <a class="social-link" href="https://www.facebook.com/" target="_blank">
+              <span class="social-link__icon facebook-icon"></span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://www.instagram.com/" target="_blank">
+              <span class="social-link__icon instagram-icon"></span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="https://twitter.com/" target="_blank">
+              <span class="social-link__icon twitter-icon"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-section__image"></div>
+    </section>
+    <section id="popular-tools-section">
+      <div class="wrapper popular-tools-section__wrapper">
+        <div class="popular-tools-section__introduction">
+          <h2 class="h2">Most Popular Tools</h2>
+          <p class="text popular-tools-section__introduction__text">Tools for the best Designers and Developers most popularly used in the world</p>
+        </div>
+        <ul id="popular-tools-list">
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Figma-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">FIGMA</h3>
+                <p class="subtitle">Free</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Sketch-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Sketch</h3>
+                <p class="subtitle">Trial & Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/VScode-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Visual Studio Code</h3>
+                <p class="subtitle">Free</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Notion-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Notion</h3>
+                <p class="subtitle">Free & Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Slack-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Slack</h3>
+                <p class="subtitle">Free & Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Invision-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Invision</h3>
+                <p class="subtitle">Free & Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn--large btn--special">Load more</button>
+      </div>
+    </section>
+    <section id="brands-section">
+      <div class="wrapper brands-section__wrapper">
+        <div class="brands-section__content-container">
+          <h3 class="h3">Trusted more than 150+ brand</h3>
+          <ul id="brands-list">
+            <li class="brand-item">
+              <img src="<%= require('./assets/icons/Microsoft-full-logo.svg') %>" alt="Microsoft">
+            </li>
+            <li class="brand-item">
+              <img src="<%= require('./assets/icons/Google-full-logo.svg') %>" alt="Google">
+            </li>
+            <li class="brand-item">
+              <img src="<%= require('./assets/icons/Slack-full-logo.svg') %>" alt="Slack">
+            </li>
+            <li class="brand-item">
+              <img src="<%= require('./assets/icons/Wordpress-full-logo.svg') %>" alt="WordPress">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="newcomer-tools-section">
+      <div class="wrapper newcomer-tools-section__wrapper">
+        <div class="newcomer-tools-section__introduction">
+          <h2 class="h2">Newcomer Tools</h2>
+          <p class="text">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+          <div class="newcomer-tools-section__introduction__btns-block">
+            <button class="btn btn--large">Explore more</button>
+          </div>
+        </div>
+        <ul id="newcomer-tools-list">
+          <li class="tool-item tool-item--small">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Zeplin-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Zeplin</h3>
+                <p class="subtitle">Free & Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item tool-item--small">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Phpstorm-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">PHPStorm</h3>
+                <p class="subtitle">Free</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item tool-item--small">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Toolbox-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Toolbox</h3>
+                <p class="subtitle">Free</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+          <li class="tool-item tool-item--small">
+            <div class="tool-item__header">
+              <img src="<%= require('./assets/icons/Procreate-logo.svg') %>" alt="">
+              <div class="tool-item__titles">
+                <h3 class="h3">Procreate</h3>
+                <p class="subtitle">Paid</p>
+              </div>
+            </div>
+            <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tool-item__btns-block">
+              <button class="btn-icon tool-item__btn-like">
+                <span class="btn-icon__icon like-icon tool-item__btn-like__icon"></span>
+              </button>
+              <button class="btn-icon">
+                <span class="btn-icon__icon folder-icon"></span>
+              </button>
+              <button class="btn btn--small tool-item__btn">Visit</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="testimonials-section">
+      <div class="wrapper testimonials-section__wrapper">
+        <div class="carousel">
+          <div class="carousel__container">
+            <button id="testimonials-carousel-left" class="carousel__btn-control">
+              <span class="carousel__btn-control__icon big-chevron-icon left"></span>
+            </button>
+            <div class="carousel__wrapper">
+              <ul id="testimonials-list" class="carousel__list">
+                <li class="testimonial">
+                  <div class="testimonial__img-block">
+                    <div class="testimonial__img-block__back">
+                      <div class="testimonial__img-block__circles"></div>
+                    </div>
+                    <img src="<%= require('./assets/images/testimonials-image-1.png') %>" alt="Ronald Richards">
+                    <div class="testimonial__author-info">
+                      <h3 class="testimonial__author-info__name">Ronald Richards</h3>
+                      <p class="testimonial__author-info__position">Product Manager</p>
+                    </div>
+                  </div>
+                  <div class="testimonial__text-block">
+                    <p class="testimonial__text">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                  </div>
+                </li>
+                <li class="testimonial">
+                  <div class="testimonial__img-block">
+                    <div class="testimonial__img-block__back">
+                      <div class="testimonial__img-block__circles"></div>
+                    </div>
+                    <img src="<%= require('./assets/images/testimonials-image-2.png') %>" alt="Ronald Richards">
+                    <div class="testimonial__author-info">
+                      <h3 class="testimonial__author-info__name">Joesph Collins</h3>
+                      <p class="testimonial__author-info__position">UI/UX Designer</p>
+                    </div>
+                  </div>
+                  <div class="testimonial__text-block">
+                    <p class="testimonial__text">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                  </div>
+                </li>
+                <li class="testimonial">
+                  <div class="testimonial__img-block">
+                    <div class="testimonial__img-block__back">
+                      <div class="testimonial__img-block__circles"></div>
+                    </div>
+                    <img src="<%= require('./assets/images/testimonials-image-3.png') %>" alt="Ronald Richards">
+                    <div class="testimonial__author-info">
+                      <h3 class="testimonial__author-info__name">Jamie Castillo</h3>
+                      <p class="testimonial__author-info__position">Full Stack Developer</p>
+                    </div>
+                  </div>
+                  <div class="testimonial__text-block">
+                    <p class="testimonial__text">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button id="testimonials-carousel-right" class="carousel__btn-control">
+              <span class="carousel__btn-control__icon big-chevron-icon right"></span>
+            </button>
+          </div>
+          <div id="testimonials-pagination" class="carousel__pagination">
+            <button class="carousel__pagination__step active"></button>
+            <button class="carousel__pagination__step"></button>
+            <button class="carousel__pagination__step"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="action-section">
+      <div class="wrapper action-section__wrapper">
+        <div class="action-section__content-container">
+          <div class="action-section__content-container__titles">
+            <h2 class="h2">Become a contributor?</h2>
+            <p class="text action-section__content-container__text">Join us and get tips & tricks to become a great Designer and Developer</p>
+          </div>
+          <div class="input-block">
+            <input class="input-block__input" type="email" placeholder="Enter your email...">
+            <button class="btn">Join Us</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="copyright-block">
+        <div class="logo">
+          <img src="<%= require('./assets/icons/Logotype.svg') %>" alt="">
+          <h2 class="logo__title">antools.</h2>
+        </div>
+        <p class="copyright">Copyright &copy; 2021. Antools</p>
+        <p class="sub-description">Antool is a web collection of information on paid or free Design and Development tools</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="info-block">
+          <h4 class="h4">Contact Us</h4>
+          <ul class="info-block__list">
+            <li>+621987463</li>
+            <li>M Building, No.10 A</li>
+            <li>antools@awesome.com</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h4 class="h4">Categories</h4>
+          <ul class="info-block__list">
+            <li>
+              <a href="" class="link">Design</a>
+            </li>
+            <li>
+              <a href="" class="link">Development</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h4 class="h4">Company Info</h4>
+          <ul class="info-block__list">
+            <li>
+              <a href="" class="link">About Us</a>
+            </li>
+            <li>
+              <a href="" class="link">Our Partners</a>
+            </li>
+            <li>
+              <a href="" class="link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

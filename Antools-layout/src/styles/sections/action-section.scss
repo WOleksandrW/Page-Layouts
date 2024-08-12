@@ -1,0 +1,28 @@
+#action-section {
+  .action-section {
+    &__wrapper {
+      padding-top: 150px;
+      padding-bottom: 240px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+      }
+      
+      &__text {
+        width: 430px;
+        text-align: center;
+      }
+    }
+  }
+}

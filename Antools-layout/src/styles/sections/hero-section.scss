@@ -1,0 +1,64 @@
+#hero-section {
+  position: relative;
+  overflow: hidden;
+
+  .hero-section {
+    &__wrapper {
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 110px;
+    }
+
+    &__image {
+      width: 590px;
+      height: 892px;
+      background: url("../assets/images/hero-section-image.png");
+      position: absolute;
+      top: 32px;
+      right: 0;
+    }
+  }
+
+  .greetings {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__text {
+      width: 480px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .social-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  .social-link {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: background-color .3s ease;
+
+    &__icon {
+      height: 36px;
+      width: 36px;
+      background-color: $colorContent;
+      transition: inherit;
+    }
+
+    &:hover {
+      background-color: transparentize($colorPrimary, 0.85);
+
+      .social-link__icon {
+        background-color: $colorPrimary;
+      }
+    }
+  }
+}

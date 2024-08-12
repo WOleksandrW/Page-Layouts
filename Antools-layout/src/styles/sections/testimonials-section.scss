@@ -1,0 +1,233 @@
+#testimonials-section {
+  .testimonials-section {
+    &__wrapper {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+    &__container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__wrapper {
+      width: 850px;
+      height: 492px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &__btn-control {
+      width: 80px;
+      height: 100px;
+      border: none;
+      border-radius: 8px;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color .3s ease;
+
+      &__icon {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        background-color: $colorContent;
+        transition: background-color .3s ease;
+
+        &.left {
+          transform: rotate(90deg);
+        }
+
+        &.right {
+          transform: rotate(-90deg);
+        }
+      }
+
+      &:hover {
+        background-color: $colorBack;
+
+        .carousel__btn-control__icon {
+          background-color: $colorPrimary;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      position: absolute;
+      transition: transform .3s ease;
+    }
+
+    &__pagination {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &__step {
+        width: 44px;
+        height: 6px;
+        border: none;
+        border-radius: 4px;
+        background-color: $colorBack;
+        cursor: pointer;
+        transition: background-color .3s ease;
+
+        &:hover {
+          background-color: transparentize($colorPrimary, 0.7);
+        }
+
+        &:active {
+          background-color: transparentize($colorPrimary, 0.4);
+        }
+
+        &.active {
+          background-color: $colorPrimary;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  .testimonial {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+
+    &__img-block {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      position: relative;
+      overflow: hidden;
+
+      &__back {
+        height: 380px;
+        width: 380px;
+        position: absolute;
+        z-index: -1;
+        bottom: 25px;
+        left: 0;
+
+        &::before {
+          content: "";
+          @include glowDote(0, $colorGlow3, 50px, 25px);
+          position: absolute;
+          top: 80px;
+          left: 80px;
+        }
+
+        &::after {
+          content: "";
+          @include glowDote(0, $colorGlow1, 70px, 30px);
+          position: absolute;
+          bottom: 80px;
+          right: 80px;
+        }
+      }
+
+      &__circles {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: $colorBack;
+        border-radius: 50%;
+        background-color: transparentize($colorBack, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid transparentize($colorBorder, 0.8);
+
+        &::before,
+        &::after {
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &::before {
+          content: "";
+          background-color: transparentize($colorBack, 0.6);
+          backdrop-filter: blur(20px);
+          height: 80%;
+          width: 80%;
+          border: 1px solid transparentize($colorBorder, 0.8);
+        }
+
+        &::after {
+          content: "";
+          background-color: $colorBack;
+          height: 60%;
+          width: 60%;
+        }
+      }
+    }
+
+    &__author-info {
+      width: fit-content;
+      padding: 16px 22px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-radius: 8px;
+      border: 1px solid $colorBorder;
+      background-color: transparentize($colorBack, 0.8);
+      backdrop-filter: blur(20px);
+      position: absolute;
+      bottom: 32px;
+      right: 4px;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        @include glowDote(0, transparentize($colorGlow4, 0.5), 70px, 40px);
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      &__name {
+        @include fontSettings(2.6rem);
+        color: $colorTitle;
+      }
+      
+      &__position {
+        @include fontSettings();
+      }
+    }
+
+    &__text-block {
+      padding-top: 128px;
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 80px;
+        width: 80px;
+        background-image: url("../assets/icons/Quotes.svg");
+        position: absolute;
+        z-index: -1;
+        transform: rotate(30deg);
+        top: 70px;
+        left: -50px;
+        opacity: 0.2;
+      }
+    }
+
+    &__text {
+      width: 400px;
+      @include fontSettings(1.4rem, 3rem);
+    }
+  }
+}

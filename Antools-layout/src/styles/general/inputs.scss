@@ -1,0 +1,26 @@
+.input-block {
+  background-color: $colorBack;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px 8px 16px;
+  border: 2px solid $colorBorder;
+  border-radius: 15px;
+  max-width: 600px;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    background-color: $colorContent;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $colorContent;
+    @include fontSettings();
+    flex: 1;
+  }
+}

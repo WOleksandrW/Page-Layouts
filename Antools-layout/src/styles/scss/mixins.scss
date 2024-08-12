@@ -1,0 +1,12 @@
+@mixin fontSettings($fSize: 1.6rem, $fLineHeight: 100%) {
+  font-size: $fSize;
+  line-height: $fLineHeight;
+}
+
+@mixin glowDote($size, $color, $blurRadius: 5px, $spreadRadius: 5px) {
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  background-color: $color;
+  box-shadow: 0 0 $blurRadius $spreadRadius $color;
+}

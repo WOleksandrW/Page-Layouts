@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+@import "./general/inputs.scss";
+@import "./general/icons.scss";
+@import "./general/tool-item.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $pageWidth;
+  margin: 0 auto;
+  background-color: $colorBackPage;
+  color: $colorContent;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.wrapper {
+  padding: 0 $wrapperPadding;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  &__title {
+    color: $colorTitle;
+    @include fontSettings(2.2rem);
+  }
+}
+
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/popular-tools-section.scss";
+@import "./sections/brands-section.scss";
+@import "./sections/newcomer-tools-section.scss";
+@import "./sections/testimonials-section.scss";
+@import "./sections/action-section.scss";

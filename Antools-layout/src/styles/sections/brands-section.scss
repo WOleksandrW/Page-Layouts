@@ -1,0 +1,42 @@
+#brands-section {
+  .brands-section {
+    &__wrapper {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    &__content-container {
+      padding: 56px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 56px;
+      background-color: transparentize($colorBack, 0.8);
+      border-radius: 25px;
+      border: 2px solid $colorBorder;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        @include glowDote(0, transparentize($colorGlow2, 0.6), 80px, 50px);
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  #brands-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .brand-item {
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+  }
+}
