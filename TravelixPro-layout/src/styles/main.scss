@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+@import "./general/icons.scss";
+@import "./general/inputs.scss";
+@import "./general/trip-items.scss";
+@import "./general/select.scss";
+@import "./general/carousel.scss";
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: $pageWidth;
+  margin: 0 auto;
+  position: relative;
+  color: $colorContent2;
+}
+
+.wrapper {
+  padding: 0 $wrapperPaddingX;
+
+  &-section {
+    padding: $wrapperPaddingY $wrapperPaddingX;
+  }
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.section-introduction {
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  &.align-center {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.transition-blur {
+  transition: filter .15s ease;
+}
+
+.blurred {
+  filter: blur(10px);
+}
+
+.dotes-matrix {
+  display: grid;
+  @include dotesMatrix(var(--rows), var(--columns), var(--rowGap), var(--colGap), var(--size));
+
+  &__dote {
+    border-radius: 50%;
+    background-color: transparentize(darken($colorBack, 5%), 0.5);;
+  }
+
+  &--secondary1 {
+    .dotes-matrix__dote {
+      background-color: $colorSecondary1;
+    }
+  }
+
+  &--secondary3 {
+    .dotes-matrix__dote {
+      background-color: $colorSecondary3;
+    }
+  }
+}
+
+.rating-list {
+  display: flex;
+  gap: 6px;
+
+  &__star {
+    @include maskIcon(url("../assets/icons/Star.svg"), 12px, 12px, $colorContent2, $size: cover);
+
+    &.filled {
+      background-color: $colorSecondary3;
+    }
+
+    &.line {
+      background: linear-gradient(to right, $colorSecondary3, $colorSecondary3 50%, $colorContent2 50%, $colorContent2);
+      background-size: 200%;
+      background-position-x: 50%;
+    }
+
+    &--small {
+      height: 8px;
+      width: 8px;
+    }
+
+    &--large {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  &--thin {
+    gap: 4px;
+  }
+}

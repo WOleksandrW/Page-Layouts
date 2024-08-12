@@ -1,0 +1,67 @@
+.trip-item,
+.trip-poster {
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reviews {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.trip-item {
+  width: 270px;
+  height: 504px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  &__img-block {
+    height: 270px;
+    width: 270px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+    overflow: clip;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__head {
+    gap: 20px;
+  }
+
+  &__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__btn-block {
+    margin-top: auto;
+  }
+}
+
+.trip-poster {
+  width: 280px;
+  padding: 20px 32px 16px;
+  background-color: $colorContent5;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 2px darken($colorBack, 2%);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__text {
+    @include fontSettings(8px, 18px);
+  }
+
+  &__btn-block {
+    margin-top: 20px;
+  }
+}

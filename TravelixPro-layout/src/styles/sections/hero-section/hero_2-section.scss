@@ -1,0 +1,101 @@
+@import "./hero-section.scss";
+
+.hero-section {
+  &__wrapper {
+    padding-top: 270px;
+    padding-bottom: 50px;
+    gap: 98px;
+  }
+
+  &__greetings {
+    gap: 30px;
+    width: 575px;
+
+    &__title {
+      @include fontSettings(5rem, 7rem);
+    }
+  }
+
+  &__form {
+    background-color: $colorSecondary5;
+    border: 1px solid $colorContent3;
+    padding: 16px 36px;
+    gap: 36px;
+  }
+
+  &__back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: $colorSecondary5;
+    height: 100%;
+    width: 70%;
+  }
+
+  &__image-1 {
+    background-image: url("../assets/images/hero_2-image-1.png");
+    width: 590px;
+    height: 655px;
+    top: 94px;
+    right: 112px;
+  }
+
+  &__back-circle {
+    width: 285px;
+    height: 285px;
+    border: 3px dashed $colorSecondary3;
+    border-radius: 50%;
+    position: absolute;
+
+    &::after {
+      content: "";
+      height: 82%;
+      width: 82%;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__circle-1 {
+    left: -184px;
+    top: 94px;
+
+    &::after {
+      background-color: transparentize($colorSecondary4, 0.5);
+    }
+  }
+
+  &__circle-2 {
+    right: -191px;
+    top: 58px;
+
+    &::after {
+      background-color: $colorSecondary5;
+    }
+  }
+
+  &__dotes-matrix {
+    position: absolute;
+    bottom: 112px;
+    right: 130px;
+  }
+
+  &__airplane-icon {
+    position: absolute;
+    transform: rotate(33deg);
+    top: 36px;
+    left: 210px;
+
+    &::before {
+      background-color: lighten($colorSecondary3, 25%);
+    }
+
+    &::after {
+      background-color: lighten($colorSecondary3, 25%);
+    }
+  }
+}

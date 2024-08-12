@@ -1,0 +1,16 @@
+#testimonials-section {
+  .testimonial {
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.testimonials-section {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

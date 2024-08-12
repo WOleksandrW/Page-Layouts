@@ -1,0 +1,96 @@
+.icon-mask {
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.search-icon {
+  mask-image: url("../assets/icons/Search.svg");
+}
+
+.service-icon-1 {
+  mask-image: url("../assets/icons/Service-1.svg");
+}
+
+.service-icon-2 {
+  mask-image: url("../assets/icons/Service-2.svg");
+}
+
+.service-icon-3 {
+  mask-image: url("../assets/icons/Service-3.svg");
+}
+
+.service-icon-4 {
+  mask-image: url("../assets/icons/Service-4.svg");
+}
+
+.car-icon {
+  mask-image: url("../assets/icons/Car.svg");
+}
+
+.discount-icon {
+  mask-image: url("../assets/icons/Discount.svg");
+}
+
+.headphones-icon {
+  mask-image: url("../assets/icons/Headphones.svg");
+}
+
+.flag-hand-icon {
+  mask-image: url("../assets/icons/Flag-hand.svg");
+}
+
+.arrow-icon {
+  mask-image: url("../assets/icons/Arrow.svg");
+
+  &.arrow-left {
+    transform: rotate(90deg);
+  }
+  &.arrow-right {
+    transform: rotate(-90deg);
+  }
+}
+
+.star-icon {
+  mask-image: url("../assets/icons/Star.svg");
+}
+
+.flag-icon {
+  mask-image: url("../assets/icons/Flag.svg");
+}
+
+.wallet-icon {
+  mask-image: url("../assets/icons/Wallet.svg");
+}
+
+.calendar-icon {
+  mask-image: url("../assets/icons/Calendar.svg");
+}
+
+.ok-icon {
+  mask-image: url("../assets/icons/OK.svg");
+}
+
+.zigzags-icon {
+  mask-image: url("../assets/icons/Zigzags.svg");
+}
+
+.airplane-icon {
+  display: flex;
+  align-items: flex-end;
+
+  &::before {
+    content: "";
+    @include maskIcon(url("../assets/icons/Airplane.svg"), 44px, 40px, lighten($colorContent2, 25%), $size: cover);
+  }
+
+  &::after {
+    content: "";
+    @include maskIcon(url("../assets/icons/Airplane-trail.svg"), 87px, 30px, lighten($colorContent2, 45%), $size: cover);
+    margin-bottom: 36px;
+  }
+}
+
+.half-circle-icon {
+  mask-image: url("../assets/icons/Half-circle.svg");
+}

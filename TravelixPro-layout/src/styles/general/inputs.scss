@@ -1,0 +1,76 @@
+.input-box {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &--small {
+    width: 70px;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: $colorContent5;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 12px;
+    outline: none;
+    color: $colorContent2;
+
+    &::placeholder {
+      color: $colorContent3;
+    }
+
+    &[type="date"] {
+      position: relative;
+      padding: 6px 12px;
+
+      &::-webkit-calendar-picker-indicator {
+        background-image: none;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        @include maskIcon(url("../assets/icons/Calendar-mini.svg"), $color: $colorContent3);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.form-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $colorContent3;
+  padding-bottom: 12px;
+  color: $colorContent2;
+
+  &::placeholder {
+    color: $colorContent3;
+  }
+}
+
+.input-block {
+  width: 770px;
+  display: flex;
+  gap: 20px;
+  border-radius: 16px;
+  padding: 12px 20px 12px 32px;
+  background-color: $colorContent5;
+
+  &__input {
+    flex: 1;
+    color: $colorContent2;
+    border: none;
+    outline: none;
+
+    &::placeholder {
+      color: $colorContent3;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.h1 {
+  @include fontSettings(6rem, 8rem);
+}
+
+.h2 {
+  @include fontSettings(3.6rem, 5.2rem);
+}
+
+.h3 {
+  @include fontSettings(2.6rem, 3.8rem);
+}
+
+.h4 {
+  @include fontSettings(2rem, 3rem);
+}
+
+.text1 {
+  @include fontSettings(1.6rem, 2.6rem);
+}
+
+.text2 {
+  @include fontSettings();
+}
+
+.text-color {
+  &1 {
+    color: $colorContent1;
+  }
+  &3 {
+    color: $colorContent3;
+  }
+}
+
+.accent {
+  &-primary {
+    &1 {
+      color: $colorPrimary1;
+    }
+    &2 {
+      color: $colorPrimary2;
+    }
+    &3 {
+      color: $colorPrimary3;
+    }
+  }
+  
+  &-secondary {
+    &1 {
+      color: $colorSecondary1;
+    }
+    &2 {
+      color: $colorSecondary2;
+    }
+    &3 {
+      color: $colorSecondary3;
+    }
+  }
+}
+
+.link {
+  display: flex;
+  transition: color .3s ease;
+  color: $colorContent2;
+  
+  &:hover {
+    color: lighten($colorContent2, 20%);
+  }
+
+  &:active {
+    color: darken($colorContent2, 10%);
+  }
+
+  &--primary {
+    &:hover {
+      color: lighten($colorPrimary1, 20%);
+    }
+
+    &:active {
+      color: darken($colorPrimary1, 10%);
+    }
+  }
+
+  &--secondary {
+    &:hover {
+      color: lighten($colorSecondary1, 20%);
+    }
+
+    &:active {
+      color: darken($colorSecondary1, 10%);
+    }
+  }
+
+  &--light {
+    color: $colorContent5;
+
+    &:hover {
+      color: darken($colorContent5, 20%);
+    }
+  
+    &:active {
+      color: darken($colorContent5, 40%);
+    }
+  }
+}

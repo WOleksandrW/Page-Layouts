@@ -1,0 +1,7 @@
+@import "./footer.scss";
+
+.footer {
+  &::after {
+    background-color: transparentize($colorPrimary1, 0.15);
+  }
+}

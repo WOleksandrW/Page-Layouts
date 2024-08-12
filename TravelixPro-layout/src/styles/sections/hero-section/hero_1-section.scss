@@ -1,0 +1,44 @@
+@import "./hero-section.scss";
+
+.hero-section {
+  &__wrapper {
+    padding-top: 250px;
+    padding-bottom: 108px;
+    gap: 88px;
+  }
+
+  &__greetings {
+    gap: 12px;
+    width: 550px;
+
+    &__text {
+      width: 472px;
+      margin-top: 20px;
+    }
+  }
+
+  &__form {
+    padding: 16px 24px;
+    gap: 28px;
+    background-color: $colorBack;
+
+    &__btn {
+      margin-left: 20px;
+    }
+  }
+
+  &__image-1 {
+    background-image: url("../assets/images/hero_1-image-1.png");
+    width: 704px;
+    height: 800px;
+    top: 0;
+    right: 0;
+  }
+  &__image-2 {
+    background-image: url("../assets/images/hero_1-image-2.png");
+    width: 212px;
+    height: 242px;
+    top: 0;
+    left: 0;
+  }
+}

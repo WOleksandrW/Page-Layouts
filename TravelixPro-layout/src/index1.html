@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelixPro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Favicon.svg') %>" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <h2 class="h2 text-color1">
+        <span class="accent-primary1">Travelix</span>
+        Pro
+      </h2>
+      <nav class="header__nav">
+        <a class="h4 header__switch-link header__switch-link--secondary" href="second.html">Switch design</a>
+        <ul class="header__nav__list text1">
+          <li>
+            <a class="header__nav__link link link--primary" href="">Tour&#39;s</a>
+          </li>
+          <li>
+            <a class="header__nav__link link link--primary" href="">Services</a>
+          </li>
+          <li>
+            <a class="header__nav__link link link--primary" href="">Packege</a>
+          </li>
+          <li>
+            <a class="header__nav__link link link--primary" href="">About Us</a>
+          </li>
+          <li>
+            <a class="header__nav__link link link--primary" href="">Sign In</a>
+          </li>
+        </ul>
+        <button class="btn">Sign Up</button>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper hero-section__wrapper">
+        <div class="hero-section__greetings">
+          <h5 class="text1">Journeys of Inspiration</h5>
+          <h1 class="h1 text-color1">
+            Start Your Journey for <span class="accent-primary2">Enjoy Life</span>.
+          </h1>
+          <p class="text1 hero-section__greetings__text">
+            Travel Agency Threats and Opportunities. The Perspective of Successful Owners
+          </p>
+        </div>
+        <div class="hero-section__form">
+          <div class="input-box">
+            <label class="input-box__label text1" for="input-location">Location</label>
+            <input
+              class="input-box__input text2"
+              id="input-location"
+              name="location"
+              type="text"
+              placeholder="Where are you going?">
+          </div>
+          <div class="input-box">
+            <label class="input-box__label text1" for="input-checkin">Check in</label>
+            <input
+              class="input-box__input text2"
+              id="input-checkin"
+              name="checkin"
+              type="date">
+          </div>
+          <div class="input-box">
+            <label class="input-box__label text1" for="input-checkout">Check out</label>
+            <input
+              class="input-box__input text2"
+              id="input-checkout"
+              name="checkout"
+              type="date">
+          </div>
+          <div class="input-box input-box--small">
+            <p class="input-box__label text1">Adult</p>
+            <div id="select-adult" class="select">
+              <div class="select__display text2">
+                <span class="select__placeholder">1</span>
+              </div>
+              <ul class="select__list text2"></ul>
+            </div>
+          </div>
+          <div class="input-box input-box--small">
+            <p class="input-box__label text1">Child</p>
+            <div id="select-child" class="select">
+              <div class="select__display text2">
+                <span class="select__placeholder">1</span>
+              </div>
+              <ul class="select__list text2"></ul>
+            </div>
+          </div>
+          <button class="btn btn--min hero-section__form__btn">
+            Search <span class="btn__icon icon-mask search-icon"></span>
+          </button>
+        </div>
+        <div class="hero-section__image hero-section__image-1"></div>
+        <div class="hero-section__image hero-section__image-2"></div>
+      </div>
+    </section>
+    <section id="reasons-section">
+      <div class="wrapper-section reasons-section__wrapper">
+        <div class="reasons-section__image">
+          <div class="airplane-icon reasons-section__airplane-icon-1"></div>
+          <div class="airplane-icon reasons-section__airplane-icon-2"></div>
+        </div>
+        <div class="reasons-section__content-container">
+          <div class="section-introduction">
+            <p class="text2">Why Choose Us</p>
+            <h2 class="h2 text-color1 reasons-section__title">We care for 100% customer satifiction</h2>
+            <p class="text1">
+              There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+            </p>
+          </div>
+          <ul class="reasons-list text1 text-color1">
+            <li>Budget Friendly</li>
+            <li>Expert Team</li>
+            <li>Safety Management</li>
+            <li>Payment Flexibility</li>
+            <li>Customise Pack</li>
+            <li>Friendly Unit</li>
+          </ul>
+          <button class="btn">Explore More</button>
+        </div>
+      </div>
+    </section>
+    <section id="services-section">
+      <div class="wrapper-section services-section__wrapper">
+        <div class="section-introduction align-center">
+          <p class="text1">Best Services</p>
+          <h2 class="h2 text-color1">Our Services</h2>
+          <p class="text1">
+            There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+          </p>
+        </div>
+        <ul class="services-list">
+          <li class="service">
+            <div class="service__info">
+              <div class="service__icon service-icon-1"></div>
+              <h3 class="h3 text-color1">Book Taxi</h3>
+              <p class="text2">
+                In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies 
+              </p>
+            </div>
+            <button class="text-btn">Explore More</button>
+          </li>
+          <li class="service">
+            <div class="service__info">
+              <div class="service__icon service-icon-2"></div>
+              <h3 class="h3 text-color1">Book Plane</h3>
+              <p class="text2">
+                In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies 
+              </p>
+            </div>
+            <button class="text-btn">Explore More</button>
+          </li>
+          <li class="service">
+            <div class="service__info">
+              <div class="service__icon service-icon-3"></div>
+              <h3 class="h3 text-color1">Book Hotel</h3>
+              <p class="text2">
+                In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies 
+              </p>
+            </div>
+            <button class="text-btn">Explore More</button>
+          </li>
+          <li class="service">
+            <div class="service__info">
+              <div class="service__icon service-icon-4"></div>
+              <h3 class="h3 text-color1">Global Tour</h3>
+              <p class="text2">
+                In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies 
+              </p>
+            </div>
+            <button class="text-btn">Explore More</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="trips-section">
+      <div class="wrapper-section trips-section__wrapper">
+        <div class="section-introduction align-center">
+          <p class="text1">Recomanded Packages</p>
+          <h2 class="h2 text-color1">Best Value Trips</h2>
+          <p class="text1">
+            There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+          </p>
+        </div>
+        <div id="trips-carousel" class="carousel trips-carousel">
+          <div class="carousel__container">
+            <div class="carousel__control-block trips-carousel__control-block">
+              <button class="icon-btn icon-btn--primary js-carousel-btn-left">
+                <span class="icon-btn__icon icon-mask arrow-icon arrow-left"></span>
+              </button>
+              <button class="icon-btn icon-btn--primary js-carousel-btn-right">
+                <span class="icon-btn__icon icon-mask arrow-icon arrow-right"></span>
+              </button>
+            </div>
+            <div class="carousel__wrapper trips-carousel__wrapper">
+              <ul class="carousel__list trips-carousel__list">
+                <li class="trip-item">
+                  <div class="trip-item__img-block">
+                    <img class="trip-item__image" src="<%= require('./assets/images/trips-image-1.png') %>" alt="Trip to Thailand">
+                  </div>
+                  <div class="trip-item__head">
+                    <h4 class="h4 text-color1">Trip to Thailand</h4>
+                    <h4 class="h4 accent-secondary1">250$</h4>
+                  </div>
+                  <p class="text1">
+                    Join the leader in smallship cruising on the Great Lakes,
+                  </p>
+                  <div class="trip-item__reviews">
+                    <div class="rating-list">
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                    </div>
+                    <p class="text2 text-color3">3.25k Review</p>
+                  </div>
+                  <div class="trip-item__btn-block">
+                    <button class="btn">View Details</button>
+                  </div>
+                </li>
+                <li class="trip-item">
+                  <div class="trip-item__img-block">
+                    <img class="trip-item__image" src="<%= require('./assets/images/trips-image-2.png') %>" alt="Trip to Thailand">
+                  </div>
+                  <div class="trip-item__head">
+                    <h4 class="h4 text-color1">Trip to Thailand</h4>
+                    <h4 class="h4 accent-secondary1">250$</h4>
+                  </div>
+                  <p class="text1">
+                    Join the leader in smallship cruising on the Great Lakes,
+                  </p>
+                  <div class="trip-item__reviews">
+                    <div class="rating-list">
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                    </div>
+                    <p class="text2 text-color3">3.25k Review</p>
+                  </div>
+                  <div class="trip-item__btn-block">
+                    <button class="btn">View Details</button>
+                  </div>
+                </li>
+                <li class="trip-item">
+                  <div class="trip-item__img-block">
+                    <img class="trip-item__image" src="<%= require('./assets/images/trips-image-3.png') %>" alt="Trip to Thailand">
+                  </div>
+                  <div class="trip-item__head">
+                    <h4 class="h4 text-color1">Trip to Thailand</h4>
+                    <h4 class="h4 accent-secondary1">250$</h4>
+                  </div>
+                  <p class="text1">
+                    Join the leader in smallship cruising on the Great Lakes,
+                  </p>
+                  <div class="trip-item__reviews">
+                    <div class="rating-list">
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                    </div>
+                    <p class="text2 text-color3">3.25k Review</p>
+                  </div>
+                  <div class="trip-item__btn-block">
+                    <button class="btn">View Details</button>
+                  </div>
+                </li>
+                <li class="trip-item">
+                  <div class="trip-item__img-block">
+                    <img class="trip-item__image" src="<%= require('./assets/images/trips-image-4.png') %>" alt="Trip to Thailand">
+                  </div>
+                  <div class="trip-item__head">
+                    <h4 class="h4 text-color1">Trip to Thailand</h4>
+                    <h4 class="h4 accent-secondary1">250$</h4>
+                  </div>
+                  <p class="text1">
+                    Join the leader in smallship cruising on the Great Lakes,
+                  </p>
+                  <div class="trip-item__reviews">
+                    <div class="rating-list">
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                      <div class="rating-list__star rating-list__star--large filled"></div>
+                    </div>
+                    <p class="text2 text-color3">3.25k Review</p>
+                  </div>
+                  <div class="trip-item__btn-block">
+                    <button class="btn">View Details</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel__pagination">
+            <button class="carousel__pagination__step"></button>
+            <button class="carousel__pagination__step"></button>
+            <button class="carousel__pagination__step active-step"></button>
+            <button class="carousel__pagination__step"></button>
+            <button class="carousel__pagination__step"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="steps-section">
+      <div class="wrapper-section steps-section__wrapper">
+        <div class="steps-section__content-caontainer">
+          <div class="section-introduction">
+            <h5 class="text1">Easy and Fast</h5>
+            <h2 class="h2 text-color1">Book Next Trip in 3 Easy Steps</h2>
+            <p class="text1">
+              There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+            </p>
+          </div>
+          <ul class="steps-list">
+            <li class="step">
+              <div class="step__marker">
+                <div class="step__marker__icon icon-mask flag-icon"></div>
+              </div>
+              <div class="step__info">
+                <h4 class="h4">Choose Destionation</h4>
+                <p class="text1">
+                  There was consensus, not surprisingly, that quality traditional travel agencies provide value.
+                </p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__marker">
+                <div class="step__marker__icon icon-mask wallet-icon"></div>
+              </div>
+              <div class="step__info">
+                <h4 class="h4">Make Payment</h4>
+                <p class="text1">
+                  There was consensus, not surprisingly, that quality traditional travel agencies provide value.
+                </p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step__marker">
+                <div class="step__marker__icon icon-mask calendar-icon"></div>
+              </div>
+              <div class="step__info">
+                <h4 class="h4">Reach Airport on Selected Date</h4>
+                <p class="text1">
+                  There was consensus, not surprisingly, that quality traditional travel agencies provide value.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="steps-section__img-block">
+          <div class="steps-section__image"></div>
+          <div class="trip-poster steps-section__trip-poster">
+            <div class="trip-poster__head">
+              <h5 class="text1 text-color1">Trip to Thailand</h4>
+              <h5 class="text1 accent-secondary1">250$</h4>
+            </div>
+            <p class="trip-poster__text">
+              Join the leader in smallship cruising on the Great Lakes,
+            </p>
+            <div class="trip-poster__reviews">
+              <div class="rating-list">
+                <div class="rating-list__star rating-list__star--large filled"></div>
+                <div class="rating-list__star rating-list__star--large filled"></div>
+                <div class="rating-list__star rating-list__star--large filled"></div>
+                <div class="rating-list__star rating-list__star--large filled"></div>
+                <div class="rating-list__star rating-list__star--large filled"></div>
+              </div>
+              <p class="text2 text-color3">3.25k Review</p>
+            </div>
+            <div class="trip-poster__btn-block">
+              <button class="text-btn text-btn--primary">Explore More</button>
+            </div>
+          </div>
+          <div class="steps-section__user-reviews">
+            <div class="user-review">
+              <div class="user-review__img-block">
+                <img src="<%= require('./assets/images/steps-user-image-1.png') %>" alt="user1">
+              </div>
+              <div class="user-review__info">
+                <div class="user-review__marker">
+                  <div class="user-review__marker__icon icon-mask ok-icon"></div>
+                </div>
+                <h6 class="user-review__name text-color1">Dr.Maren Lubin</h6>
+                <p class="user-review__trip">Thailand to Peris</p>
+                <div class="rating-list rating-list--thin">
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                </div>
+              </div>
+            </div>
+            <div class="user-review">
+              <div class="user-review__img-block">
+                <img src="<%= require('./assets/images/steps-user-image-2.png') %>" alt="user1">
+              </div>
+              <div class="user-review__info">
+                <div class="user-review__marker">
+                  <div class="user-review__marker__icon icon-mask ok-icon"></div>
+                </div>
+                <h6 class="user-review__name text-color1">Leo Carder</h6>
+                <p class="user-review__trip">Cox&#39;s Bazar to Peris</p>
+                <div class="rating-list rating-list--thin">
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                  <div class="rating-list__star rating-list__star--small"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="steps-section__dotes-matrix dotes-matrix" data-rows="4" data-columns="12" data-size="9" data-row-gap="9" data-col-gap="9"></div>
+      </div>
+    </section>
+    <section id="testimonials-section">
+      <div class="wrapper-section testimonials-section__wrapper">
+        <div class="section-introduction align-center">
+          <h5 class="text1">Review & Testimonials</h5>
+          <h2 class="h2 text-color1">Tourist Feedback</h2>
+          <p class="text1">
+            There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+          </p>
+        </div>
+        <div id="testimonials-carousel" class="carousel testimonials-carousel">
+          <div class="testimonials-carousel__back circle1"></div>
+          <div class="testimonials-carousel__back circle2"></div>
+          <div class="testimonials-carousel__back dashed"></div>
+          <div class="testimonials-carousel__back zigzags zigzags-icon"></div>
+          <div class="carousel__wrapper testimonials-carousel__wrapper">
+            <ul class="carousel__list">
+              <li class="testimonial">
+                <div class="testimonial__img-block">
+                  <img class="testimonial__image" src="<%= require('./assets/images/testimonials_1-image-1.png') %>" alt="user">
+                </div>
+                <div class="testimonial__content">
+                  <q class="text1">Travelix Pro transformed our vacation planning! The user-friendly interface and personalized recommendations made our trips unforgettable. The customer service is exceptional, ensuring a smooth and enjoyable experience every time.</q>
+                  <div class="testimonial__info">
+                    <h5 class="text1 accent-primary3">Jane Smith</h5>
+                    <p class="text2">Marketing Manager, Wanderlust Adventures</p>
+                    <div class="rating-list">
+                      <div class="rating-list__star filled"></div>
+                      <div class="rating-list__star filled"></div>
+                      <div class="rating-list__star filled"></div>
+                      <div class="rating-list__star filled"></div>
+                      <div class="rating-list__star filled"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="testimonials-carousel__back dotes dotes-matrix" data-rows="9" data-columns="8" data-size="10" data-row-gap="9" data-col-gap="10"></div>
+          <div class="carousel__control-block testimonials-carousel__control-block">
+            <button class="icon-btn js-carousel-btn-left">
+              <span class="icon-btn__icon icon-mask arrow-icon arrow-left"></span>
+            </button>
+            <button class="icon-btn js-carousel-btn-right">
+              <span class="icon-btn__icon icon-mask arrow-icon arrow-right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="wrapper-section contact-section__wrapper">
+        <div class="section-introduction align-center">
+          <h5 class="text1">Holiday</h5>
+          <h2 class="h2 text-color1">Get In Touch</h2>
+          <p class="text1">
+            There was consensus, not surprisingly, that quality traditional travel agencies provide value for money. However, this was accompanied by a high level of concern that many consumers
+          </p>
+        </div>
+        <div class="contact-section__content-container">
+          <div class="contact-section__form">
+            <input class="form-input text1" type="text" placeholder="Your Name">
+            <input class="form-input text1" type="email" placeholder="Your Email Address">
+            <input class="form-input text1" type="text" placeholder="Message">
+            <div>
+              <button class="btn">Sign Up</button>
+            </div>
+          </div>
+          <div class="contact-section__img-block">
+            <div class="contact-section__image"></div>
+            <div class="contact-section__dotes-matrix dotes-matrix dotes-matrix--secondary3" data-rows="4" data-columns="6" data-size="8" data-row-gap="8" data-col-gap="8"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__subscribe">
+        <h2 class="h2">Subscribe to get the latest news about us</h2>
+        <p class="text1 footer__subscribe__text">
+          PlushCare offers insured and non-insured individuals access to affordable, convenient, and personalized care for urgent and ongoing medical conditions.
+        </p>
+        <div class="input-block">
+          <input class="input-block__input text1" type="email" placeholder="Enter your email address">
+          <button class="btn">Subscribe Now</button>
+        </div>
+      </div>
+      <div class="footer__info">
+        <div class="footer__about">
+          <h2 class="h2">Travelix Pro</h2>
+          <p class="text1">
+            Your private online marketplace where you can trade goods and services with family, friends, neighbors, classmates, co-workers, and members of the many other communities that comprise your personal world.
+          </p>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav__block">
+            <h4 class="h4">Company</h4>
+            <ul class="footer__nav__list text2">
+              <li>
+                <a class="link link--light" href="">Help Center</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">About</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">Press</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav__block">
+            <h4 class="h4">Community</h4>
+            <ul class="footer__nav__list text2">
+              <li>
+                <a class="link link--light" href="">User  Agreement</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">Community Guidelines</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">Cookie Policy</a>
+              </li>
+              <li>
+                <a class="link link--light" href="">My Account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav__block">
+            <h4 class="h4">Contact us</h4>
+            <ul class="footer__nav__list text1">
+              <li class="contact">
+                <span class="mail-icon contact__icon"></span>
+                <a class="link link--light" href="">contact@example.com</a>
+              </li>
+              <li class="contact">
+                <span class="phone-icon contact__icon"></span>
+                <a class="link link--light" href="">+152 534-468-854</a>
+              </li>
+              <li class="contact">
+                <span class="location-icon contact__icon"></span>
+                <a class="link link--light" href="">View on Google map</a>
+              </li>
+            </ul>
+            <ul class="footer__nav__socials">
+              <li>
+                <a class="link" href="https://www.facebook.com/" target="_blank">
+                  <img src="<%= require('./assets/icons/Facebook.svg') %>" alt="Facebook">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://www.linkedin.com/"  target="_blank">
+                  <img src="<%= require('./assets/icons/Linkedin.svg') %>" alt="Linkedin">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://twitter.com/"  target="_blank">
+                  <img src="<%= require('./assets/icons/Twitter.svg') %>" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a class="link" href="https://www.instagram.com/"  target="_blank">
+                  <img src="<%= require('./assets/icons/Instagram.svg') %>" alt="Instagram">
+                </a>
+              </li> 
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="copyright-block">
+        <p class="text1">
+          Copy right &copy; 2021, All Rights Reserved By Travelix Pro 
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

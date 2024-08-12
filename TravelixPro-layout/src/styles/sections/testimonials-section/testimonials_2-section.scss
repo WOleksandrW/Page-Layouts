@@ -1,0 +1,152 @@
+@use 'sass:math';
+@import "./testimonials-section.scss";
+
+$avatarVerPos: bottom, top;
+$avatarHorPos: right, left;
+
+#testimonials-section {
+  background-color: $colorSecondary5;
+
+  .testimonial-block {
+    height: 520px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .avatar-list {
+    width: 850px;
+    height: 200px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 300px;
+      height: 300px;
+      background-color: darken($colorSecondary5, 2%);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $colorSecondary4;
+    position: absolute;
+    overflow: clip;
+    transition: top .3s ease,
+                left .3s ease,
+                transform .3s ease;
+
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+
+    &.avatar-placeholder {
+      @for $i from 1 through 4 {
+        $verPos: nth($avatarVerPos, math.floor(math.div($i - 1, 2)) % 2 + 1);
+        $horPos: nth($avatarHorPos, $i % 2 + 1);
+        $valueHor: math.ceil(math.div($i, 2)) - 1;
+        $valueVer: math.ceil(math.div($i, 2)) - 1;
+  
+        &:nth-of-type(#{$i}) {
+          #{$horPos}: calc(150px * $valueHor);
+          #{$verPos}: calc(10px * $valueVer);
+        }
+      }
+    }
+
+    &.active-avatar {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(300%);
+      z-index: 2;
+    }
+
+    &:not(.active-avatar) {
+      cursor: pointer;
+    }
+  }
+
+  .testimonial {
+    position: relative;
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 660px;
+    background-color: $colorContent5;
+    border-radius: 16px;
+    text-align: center;
+
+    &__info {
+      align-items: center;
+    }
+
+    &::before {
+      content: "";
+      height: 30px;
+      width: 60px;
+      background-color: $colorContent5;
+      position: absolute;
+      left: 50%;
+      top: 1px;
+      transform: translate(-50%, -100%);
+      clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    }
+  }
+}
+
+.testimonials-section {
+  &__wrapper {
+    position: relative;
+    overflow: clip;
+    padding-bottom: 132px;
+    gap: 16px;
+  }
+
+  &__half-circle-1,
+  &__half-circle-2,
+  &__half-circle-3 {
+    position: absolute;
+    transform: rotate(135deg);
+  }
+
+  &__half-circle-1,
+  &__half-circle-2 {
+    background: transparentize($colorSecondary3, 0.9);
+  }
+
+  &__half-circle-1,
+  &__half-circle-3 {
+    height: 55px;
+    width: 150px;
+  }
+
+  &__half-circle-1 {
+    top: 140px;
+    right: -56px;
+  }
+
+  &__half-circle-2 {
+    height: 30px;
+    width: 80px;
+    top: 260px;
+    left: 132px;
+  }
+
+  &__half-circle-3 {
+    background: transparentize($colorSecondary3, 0.2);
+    bottom: 110px;
+    right: 320px;
+  }
+}

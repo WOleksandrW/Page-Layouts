@@ -1,0 +1,71 @@
+.carousel {
+  display: flex;
+
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+
+  &__control-block {
+    display: flex;
+    position: absolute;
+  }
+
+  &__wrapper {
+    overflow: clip;
+    position: relative;
+  }
+
+  &__list {
+    position: absolute;
+    display: flex;
+    transition: transform .3s ease;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 24px;
+
+    &__step {
+      width: 16px;
+      height: 16px;
+      border: none;
+      border-radius: 50%;
+      background-color: $colorContent4;
+      cursor: pointer;
+      transition: background-color .3s ease,
+                  transform .3s ease;
+
+      &:hover {
+        background-color: lighten($colorPrimary2, 30%);
+      }
+      
+      &:active {
+        background-color: lighten($colorPrimary2, 10%);
+      }
+
+      &.active-step {
+        background-color: $colorPrimary2;
+        transform: scale(150%);
+      }
+    }
+
+    &--secondary {
+      .carousel__pagination__step {
+        &:hover {
+          background-color: lighten($colorSecondary1, 30%);
+        }
+        
+        &:active {
+          background-color: lighten($colorSecondary1, 10%);
+        }
+  
+        &.active-step {
+          background-color: $colorSecondary1;
+        }
+      }
+    }
+  }
+}

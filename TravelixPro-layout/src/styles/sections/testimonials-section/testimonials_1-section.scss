@@ -1,0 +1,120 @@
+@import "./testimonials-section.scss";
+
+#testimonials-section {
+  .testimonials-carousel {
+    margin-left: auto;
+    padding-bottom: 170px;
+    position: relative;
+
+    &__back {
+      position: absolute;
+
+      &.circle1 {
+        height: 154px;
+        width: 154px;
+        background-color: $colorPrimary1;
+        border-radius: 50%;
+        top: -52px;
+        left: -70px;
+      }
+
+      &.circle2 {
+        height: 370px;
+        width: 370px;
+        background-color: $colorPrimary3;
+        border-radius: 50%;
+        left: 130px;
+        bottom: 0;
+      }
+
+      &.dashed {
+        width: 200px;
+        height: 180px;
+        top: 0;
+        left: 224px;
+        border-top: 5px dashed $colorTertiary;
+        border-right: 5px dashed $colorTertiary;
+      }
+
+      &.zigzags {
+        height: 50px;
+        width: 50px;
+        background-color: transparentize(darken($colorBack, 5%), 0.5);
+        left: 130px;
+        bottom: 66px;
+      }
+
+      &.dotes {
+        bottom: 96px;
+        left: -72px;
+      }
+    }
+
+    &__wrapper {
+      width: 1070px;
+      height: 418px;
+    }
+
+    &__control-block {
+      gap: 30px;
+      left: 270px;
+      bottom: 70px;
+    }
+  }
+
+  .testimonial {
+    display: flex;
+    gap: 100px;
+    padding: 18px 0 0;
+
+    &__img-block {
+      height: 400px;
+      width: 400px;
+      border-radius: 24px;
+      overflow: clip;
+    }
+
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+
+    &__content {
+      width: 570px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      padding-top: 28px;
+      height: fit-content;
+
+      &::before,
+      &::after {
+        content: "";
+        @include maskIcon(url("../assets/icons/Quotes.svg"), 38px, 30px, $colorTertiary);
+        position: absolute;
+      }
+
+      &::before {
+        left: 0;
+        top: -18px;
+      }
+
+      &::after {
+        right: 0;
+        bottom: -4px;
+        transform: rotate(180deg);
+      }
+    }
+
+    &__info {
+      gap: 2px;
+    }
+  }
+}
+
+.testimonials-section {
+  &__wrapper {
+    gap: 68px;
+  }
+}

@@ -1,0 +1,24 @@
+@mixin fontSettings($fSize: 1.4rem, $lHeight: 2.4rem) {
+  font-size: $fSize;
+  line-height: $lHeight;
+}
+
+@mixin maskIcon($icon, $width: 16px, $height: 16px, $color: 0, $repeat: no-repeat, $position: center, $size: auto) {
+  width: $width;
+  height: $height;
+  mask-image: $icon;
+  mask-repeat: $repeat;
+  mask-position: $position;
+  mask-size: $size;
+
+  @if $color != 0 {
+    background-color: $color;
+  }
+}
+
+@mixin dotesMatrix($rows, $columns, $rowGap, $colGap, $size) {
+  grid-template-columns: repeat($columns, $size);
+  grid-template-rows: repeat($rows, $size);
+  row-gap: $rowGap;
+  column-gap: $colGap;
+}

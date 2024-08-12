@@ -1,0 +1,26 @@
+@import "./services-section.scss";
+
+#services-section {
+  .service {
+    padding: 36px 20px 44px;
+    gap: 44px;
+
+    &__icon {
+      &.service-icon-1 {
+        background-color: $colorPrimary1;
+      }
+      &.service-icon-4 {
+        background-color: $colorService2;
+      }
+    }
+
+    &:nth-child(2n) {
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+    &:nth-child(2n + 1) {
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "./reasons-section.scss";
+
+#reasons-section {
+  .reasons-list {
+    font-weight: 700;
+    width: 524px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 86px;
+    row-gap: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.reasons-section {
+  &__wrapper {
+    padding-top: 76px;
+    align-items: center;
+    gap: 100px;
+  }
+
+  &__image {
+    background-image: url("../assets/images/reasons_1-image-1.png");
+    width: 456px;
+    height: 520px;
+    position: relative;
+  }
+
+  &__content-container {
+    gap: 16px;
+  }
+
+  &__title {
+    width: 370px;
+  }
+
+  &__airplane-icon-1 {
+    position: absolute;
+    left: -48px;
+    bottom: 188px;
+    transform: rotate(-90deg);
+
+    &::before {
+      background-color: $colorPrimary1;
+    }
+  }
+
+  &__airplane-icon-2 {
+    position: absolute;
+    right: 0px;
+    bottom: 114px;
+    transform: rotate(165deg);
+
+    &::before {
+      background-color: $colorPrimary3;
+    }
+  }
+}

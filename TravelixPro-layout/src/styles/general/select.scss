@@ -1,0 +1,64 @@
+
+.select {
+  position: relative;
+
+  &__display {
+    width: 100%;
+    background-color: $colorContent5;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 32px 7px 12px;
+    outline: none;
+    color: $colorContent2;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: inline-flex;
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translate(0, -50%);
+      @include maskIcon(url("../assets/icons/Chevron.svg"), $color: $colorContent3);
+      transition: transform .3s ease;
+    }
+  }
+
+  &__placeholder {
+    color: $colorContent3;
+  }
+
+  &__list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: translate(0, 100%);
+    border: 1px solid $colorBack;
+    background-color: $colorContent5;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  &__item {
+    padding: 7px 32px 7px 12px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: $colorBack;
+    }
+  }
+
+  &.active {
+    .select__display::after {
+      transform: translate(0, -50%) rotate(-180deg);
+    }
+
+    .select__list {
+      display: block;
+    }
+  }
+}

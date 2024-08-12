@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  &__wrapper {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 52px;
+
+    &__list {
+      display: flex;
+      gap: 40px;
+    }
+
+    &__link {
+      font-weight: 700;
+    }
+  }
+
+  &__switch-link {
+    background-image: linear-gradient(120deg, lighten($colorPrimary1, 20%), $colorPrimary1 50%, $colorSecondary1 50%, lighten($colorSecondary1, 20%));
+    background-size: 250%;
+    background-position: center;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    transition: background-position .3s ease;
+
+    &--primary {
+      &:hover {
+        background-position: left;
+      }
+    }
+
+    &--secondary {
+      &:hover {
+        background-position: right;
+      }
+    }
+  }
+}

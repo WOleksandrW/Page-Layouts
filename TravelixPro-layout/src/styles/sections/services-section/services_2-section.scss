@@ -1,0 +1,53 @@
+@import "./services-section.scss";
+
+#services-section {
+  .service {
+    border-radius: 24px;
+    padding: 36px 20px 30px;
+    gap: 32px;
+
+    &__icon {
+      &.service-icon-1 {
+        background-color: $colorSecondary1;
+      }
+      &.service-icon-4 {
+        background-color: $colorPrimary1;
+      }
+    }
+
+    &:not(:hover) {
+      .service__btn {
+        background-color: transparent;
+        color: $colorSecondary1;
+        border: 1px solid $colorSecondary1;
+      }
+    }
+  }
+}
+
+.services-section {
+  &__wrapper {
+    position: relative;
+    overflow-x: clip;
+  }
+
+  &__half-circle {
+    background: transparentize($colorSecondary3, 0.85);
+    height: 80px;
+    width: 223px;
+    position: absolute;
+    top: -50px;
+    left: -84px;
+    transform: rotate(40deg);
+  }
+
+  &__circle {
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    border: 71px solid transparentize($colorSecondary1, 0.9);
+    position: absolute;
+    top: 40px;
+    right: -164px;
+  }
+}

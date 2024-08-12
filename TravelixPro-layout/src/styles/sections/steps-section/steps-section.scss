@@ -1,0 +1,138 @@
+#steps-section {
+  .user-review {
+    width: 180px;
+    padding: 14px 16px;
+    background-color: $colorContent5;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0px 4px 4px 0 transparentize($colorBack, 0.8);
+    border-radius: 8px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__marker {
+      height: 12px;
+      width: 12px;
+      border: 1px solid $colorPrimary3;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__icon {
+        width: 5px;
+        height: 5px;
+        background-color: $colorPrimary3;
+      }
+    }
+
+    &__name {
+      @include fontSettings(10px, 12px);
+    }
+
+    &__trip {
+      @include fontSettings(8px, 10px)
+    }
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &__marker {
+      height: 60px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+
+      &__icon {
+        height: 30px;
+        width: 30px;
+        background-color: $colorContent5;
+      }
+    }
+
+    &__info {
+      width: 470px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &:nth-child(3n + 1) {
+      .step__marker {
+        background-color: $colorSecondary2;
+      }
+    }
+    &:nth-child(3n + 2) {
+      .step__marker {
+        background-color: $colorPrimary3;
+      }
+    }
+    &:nth-child(3n) {
+      .step__marker {
+        background-color: $colorPrimary1;
+      }
+    }
+  }
+}
+
+.steps-section {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-block {
+    position: relative;
+  }
+
+  &__image {
+    height: 512px;
+    width: 580px;
+  }
+
+  &__content-caontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 570px;
+  }
+
+  &__trip-poster {
+    position: absolute;
+    left: 24px;
+    bottom: -32px;
+  }
+
+  &__user-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: -24px;
+    right: -36px;
+  }
+
+  &__dotes-matrix {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+  }
+}
