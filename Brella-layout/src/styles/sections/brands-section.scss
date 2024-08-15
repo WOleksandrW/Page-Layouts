@@ -1,0 +1,93 @@
+#brands-section {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 1px;
+    background-color: transparentize($colorContent, 0.8);
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+
+    &__btn {
+      height: 30px;
+      width: 30px;
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color .3s ease;
+
+      &__icon {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: $colorPrimaryDark;
+      }
+
+      &:hover {
+        background-color: transparentize($colorPrimaryDark, 0.9);
+      }
+
+      &:active {
+        background-color: transparentize($colorPrimaryDark, 0.8);
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+      height: 60px;
+      flex: 1;
+      overflow: clip;
+    }
+
+    &__list-position {
+      position: absolute;
+      height: 100%;
+      min-width: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .brand-item {
+    width: 146px;
+    height: 60px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.brands-section {
+  &__wrapper {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 110px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+}

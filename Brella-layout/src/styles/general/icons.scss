@@ -1,0 +1,31 @@
+.mask-image {
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.micon-linkedin {
+  mask-image: url("../assets/icons/Linkedin.svg");
+}
+
+.micon-twitter {
+  mask-image: url("../assets/icons/Twitter.svg");
+}
+
+.micon-youtube {
+  mask-image: url("../assets/icons/Youtube.svg");
+}
+
+.micon-arrow {
+  mask-image: url("../assets/icons/Arrow.svg");
+}
+
+.micon-arrow-left {
+  mask-image: url("../assets/icons/Arrow.svg");
+  transform: rotate(90deg);
+}
+
+.micon-arrow-right {
+  mask-image: url("../assets/icons/Arrow.svg");
+  transform: rotate(-90deg);
+}

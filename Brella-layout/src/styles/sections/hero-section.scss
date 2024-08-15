@@ -1,0 +1,79 @@
+#hero-section {
+  background-image: url("../assets/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  .input-block {
+    display: flex;
+    background-color: $colorContentLight;
+    width: 400px;
+    border-radius: 6px;
+    overflow: clip;
+
+    &__input {
+      flex: 1;
+      padding: 20px;
+      color: $colorContentDark;
+      font-weight: 700;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: $colorContentDark;
+      }
+    }
+
+    &__btn {
+      padding: 20px 35px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.hero-section {
+  &__wrapper {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 186px;
+  }
+
+  &__content-container {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    padding: 50px;
+    background-color: $colorContentLight;
+    box-shadow: 1px 1px 4px 0 transparentize($colorContent, 0.4);
+    border-radius: 6px;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    &__img {
+      margin-top: 5px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}

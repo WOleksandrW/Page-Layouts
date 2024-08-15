@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+@import "./general/icons.scss";
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $pageWidth;
+  margin: 0 auto;
+  color: $colorContent;
+  font-family: "Raleway", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.wrapper {
+  padding: 0 $wrapperPadding;
+}
+
+.back {
+  &-primary {
+    &-light {
+      background-color: $colorPrimaryLight;
+    }
+    &-dark {
+      background-color: $colorPrimaryDark;
+    }
+  }
+}
+
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/reason-section.scss";
+@import "./sections/benefits-section.scss";
+@import "./sections/plan-section.scss";
+@import "./sections/claim-section.scss";
+@import "./sections/employer-section.scss";
+@import "./sections/brands-section.scss";
+@import "./sections/articles-section.scss";
+@import "./sections/active-section.scss";

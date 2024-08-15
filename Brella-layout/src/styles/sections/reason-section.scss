@@ -1,0 +1,52 @@
+.reason-section {
+  &__wrapper {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  &__content-container {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    width: 510px;
+    height: 364px;
+    background-image: url("../assets/images/reason-image.png");
+    padding-top: 132px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__title {
+      font-family: "Roboto", sans-serif;
+      @include fontSettings(7rem, 9rem);
+    }
+
+    &__text {
+      width: 240px;
+    }
+  }
+
+  &__img-block {
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__text {
+      text-align: right;
+      padding-right: 36px;
+    }
+  }
+}

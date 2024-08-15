@@ -1,0 +1,159 @@
+.footer {
+  width: 100%;
+  background-color: $colorPrimaryDark;
+  color: $colorContentLight;
+
+  &__wrapper {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &__hr {
+    border: none;
+    border-top: 1px solid;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__logo {
+    height: fit-content;
+    width: 98px;
+  }
+
+  &__blocks {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 355px;
+    margin-left: auto;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__privacy {
+    display: flex;
+    justify-content: space-between;
+
+    &__links {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__hr {
+      border: none;
+      border-left: 1px solid;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    color: $colorContentLight;
+    transition: color .3s ease;
+
+    &:hover {
+      color: darken($colorContentLight, 10%);
+    }
+  
+    &:active {
+      color: darken($colorContentLight, 20%);
+    }
+  }
+
+  &__socials-list {
+    margin-top: 14px;
+  }
+
+  &__subtitle {
+    color: $colorContentLight;
+  }
+
+  .block {
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .socials-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .social-link {
+    display: flex;
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: $colorContentLight;
+  }
+
+  .input-container {
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px 70px 12px 20px;
+    background-color: transparent;
+    border: 1px solid $colorContentLight;
+    color: $colorContentLight;
+    outline: none;
+    font-family: "Raleway", sans-serif;
+
+    &::placeholder {
+      color: $colorContentLight;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $colorContentLight;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &__icon {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: $colorPrimaryDark;
+      transform: rotate(-90deg);
+    }
+
+    &:hover {
+      background-color: darken($colorContentLight, 10%);
+    }
+  
+    &:active {
+      background-color: darken($colorContentLight, 20%);
+    }
+  }
+}

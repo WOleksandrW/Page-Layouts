@@ -1,0 +1,103 @@
+#benefits-section {
+  position: relative;
+
+  .benefit-btn {
+    position: relative;
+    overflow: clip;
+    border: none;
+    background-color: transparent;
+    color: $colorPrimary;
+    padding-right: 5px;
+
+    &::after {
+      content: "";
+      mask-image: url("../assets/icons/Arrow.svg");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: cover;
+      display: flex;
+      height: 25px;
+      width: 25px;
+      background-color: $colorPrimaryDark;
+      transform: translate(100%, -50%) rotate(-90deg);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transition: transform .4s ease;
+    }
+
+    &:not(.active-benefit) {
+      cursor: pointer;
+      transition: padding-right .3s ease,
+                  color .3s ease;
+
+      &:hover {
+        color: $colorPrimaryDark;
+      }
+
+      &:active {
+        padding-right: calc(36px + 25px);
+
+        &::after {
+          transform: translate(-100%, -50%) rotate(-90deg);
+        }
+      }
+    }
+
+    &.active-benefit {
+      color: $colorPrimaryDark;
+      font-weight: 700;
+      padding-right: calc(36px + 25px);
+
+      &::after {
+        transform: translate(-100%, -50%) rotate(-90deg);
+      }
+    }
+  }
+}
+
+.benefits-section {
+  &__back {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  &__right-side {
+    width: 500px;
+    color: $colorContentLight;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    transition: filter .15s ease;
+
+    &.blured {
+      filter: blur(12px);
+    }
+  }
+}

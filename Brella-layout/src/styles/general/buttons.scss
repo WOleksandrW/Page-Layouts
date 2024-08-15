@@ -1,0 +1,43 @@
+.btn {
+  color: $colorContentLight;
+  background-color: $colorPrimary;
+  @include fontSettings(1.4rem, 2rem);
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: lighten($colorPrimary, 10%);
+  }
+
+  &:active {
+    background-color: darken($colorPrimary, 10%);
+  }
+}
+
+.text-btn {
+  height: 30px;
+  @include fontSettings();
+  display: flex;
+  background-color: transparent;
+  color: $colorPrimaryDark;
+  font-weight: 700;
+  border: none;
+  border-bottom: 2px solid $colorPrimaryDark;
+  cursor: pointer;
+  transition: color .3s ease,
+              border-color .3s ease;
+
+  &:hover {
+    color: lighten($colorPrimary, 10%);
+    border-color: lighten($colorPrimary, 10%);
+  }
+
+  &:active {
+    color: darken($colorPrimary, 10%);
+    border-color: darken($colorPrimary, 10%);
+  }
+}

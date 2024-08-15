@@ -1,0 +1,48 @@
+.plan-section {
+  &__wrapper {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 550px;
+  }
+
+  &__img {
+    height: 300px;
+    width: 560px;
+    background-image: url("../assets/images/plan-image.png");
+  }
+
+  &__features-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__title {
+      @include fontSettings(6rem, 7.8rem);
+      font-family: "Roboto", sans-serif;
+    }
+    
+    &__description {
+      @include fontSettings(1.3rem, 2.2rem);
+    }
+  }
+}

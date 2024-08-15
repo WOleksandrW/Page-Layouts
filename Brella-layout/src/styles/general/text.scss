@@ -1,0 +1,86 @@
+.h1,
+.h2,
+.h5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.h1,
+.h5 {
+  color: $colorPrimaryDark;
+}
+
+.h1 {
+  @include fontSettings(3.6rem, 4.6rem);
+}
+
+.h2 {
+  @include fontSettings(3.2rem, 4.2rem);
+}
+
+.h5 {
+  @include fontSettings(2rem, 2.6rem);
+}
+
+.subtitle1,
+.subtitle2 {
+  text-transform: uppercase;
+  color: $colorPrimary;
+}
+
+.subtitle1 {
+  @include fontSettings(1.3rem, 2rem);
+}
+
+.subtitle2 {
+  @include fontSettings(1.1rem, 1.8rem);
+}
+
+.text1 {
+  @include fontSettings(2rem, 3.4rem);
+}
+
+.text2 {
+  @include fontSettings($lHeight: 3rem);
+}
+
+.text3 {
+  @include fontSettings(1.6rem, 2.4rem);
+}
+
+.text4 {
+  @include fontSettings(1.4rem, 2.4rem);
+}
+
+.text5 {
+  @include fontSettings(1.4rem, 2rem);
+}
+
+.accent {
+  &-primary {
+    color: $colorPrimary;
+
+    &-dark {
+      color: $colorPrimaryDark;
+    }
+  }
+
+  &-secondary {
+    color: $colorSecondary;
+  }
+}
+
+.link {
+  display: flex;
+  @include fontSettings(1.4rem);
+  font-weight: 700;
+  color: $colorPrimaryDark;
+  transition: color .3s ease;
+
+  &:hover {
+    color: lighten($colorPrimaryDark, 10%);
+  }
+
+  &:active {
+    color: darken($colorPrimaryDark, 10%);
+  }
+}
