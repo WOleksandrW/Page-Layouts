@@ -1,0 +1,80 @@
+.price-section {
+  &__wrapper {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__control {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.price-item {
+  width: 312px;
+  border-radius: 8px;
+  border: 1px solid darken($colorBack, 20%);
+  padding: 30px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 12px;
+      width: 16px;
+      mask-image: url("../assets/icons/OK.svg");
+      background-color: lighten($colorContent, 60%);
+    }
+
+    &.active {
+      &::before {
+        background-color: $colorSecondary;
+      }
+    }
+  }
+
+  &__rate-block {
+    margin-top: 24px;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__value {
+      font-weight: bold;
+      display: inline-flex;
+      gap: 4px;
+      align-items: flex-start;
+  
+      &::before {
+        content: "$";
+        @include fontSettings(1.8rem, 2.8rem);
+      }
+    }
+  }
+}

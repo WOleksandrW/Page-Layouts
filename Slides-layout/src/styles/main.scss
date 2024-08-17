@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $pageWidth;
+  margin: 0 auto;
+  color: $colorContent;
+}
+
+.wrapper {
+  padding: 0 $wrapperPadding;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.logo {
+  @include fontSettings(3.2rem);
+  font-weight: 900;
+  display: flex;
+  align-items: flex-start;
+
+  &::after {
+    content: "5";
+    @include fontSettings(1.2rem);
+    color: $colorContentLight;
+    background-color: $colorQuinary;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/benefits-section.scss";
+@import "./sections/action-section.scss";
+@import "./sections/testimonials-section.scss";
+@import "./sections/price-section.scss";

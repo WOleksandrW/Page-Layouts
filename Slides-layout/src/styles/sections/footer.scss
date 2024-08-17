@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+
+  &__wrapper {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    &__list {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
+  &__rights {
+    padding: 20px 0;
+    border-top: 1px solid transparentize($colorContent, 0.9);
+    text-align: center;
+  }
+}

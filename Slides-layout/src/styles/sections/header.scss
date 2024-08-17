@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  box-shadow: 0 1px 1px 0 transparentize($colorContent, 0.9);
+
+  &__wrapper {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    &__list {
+      display: flex;
+      gap: 36px;
+    }
+  }
+}

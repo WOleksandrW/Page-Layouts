@@ -1,0 +1,107 @@
+#testimonials-section {
+  .carousel {
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+      margin-top: 80px;
+      height: 60px;
+      width: 60px;
+      border: none;
+      border-radius: 8px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color .3s ease;
+
+      &:hover {
+        background-color: transparentize($colorContent, 0.95);
+
+        .carousel__btn__icon {
+          background-color: lighten($colorPrimary, 10%);
+        }
+      }
+      &:active {
+        background-color: transparentize($colorContent, 0.85);
+
+        .carousel__btn__icon {
+          background-color: darken($colorPrimary, 10%);
+        }
+      }
+
+      &__icon {
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        mask-image: url("../assets/icons/Chevron-big.svg");
+        background-color: $colorContent;
+        transition: background-color .3s ease;
+
+        &.icon-left {
+          transform: rotate(90deg);
+        }
+        &.icon-right {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    &__wrapper {
+      width: 900px;
+      height: 450px;
+      position: relative;
+      overflow: clip;
+    }
+
+    &__list {
+      position: absolute;
+      display: flex;
+    }
+  }
+}
+
+.testimonials-section {
+  &__wrapper {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  &__hr {
+    border: none;
+    border-bottom: 1px solid darken($colorBack, 10%);
+  }
+}
+
+.testimonial {
+  width: 900px;
+  height: 450px;
+  padding: 20px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    @include fontSettings(4rem, 5.2rem);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__avatar {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+  }
+}

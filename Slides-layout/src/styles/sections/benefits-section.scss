@@ -1,0 +1,125 @@
+.benefits-section {
+  &__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    #benefit_2-section & {
+      align-items: center;
+    }
+  }
+
+  &__content {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    #benefit_1-section & {
+      margin-top: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__tag {
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: $colorBack;
+  }
+
+  &__card {
+    width: 120px;
+    height: 100px;
+    background-color: $colorBack;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__img {
+    border-radius: 6px;
+    box-shadow: 0 8px 20px 0 transparentize($colorContent, 0.7);
+
+    #benefit_1-section & {
+      width: 480px;
+      height: 300px;
+    }
+
+    #benefit_3-section & {
+      width: 530px;
+      height: 340px;
+    }
+  }
+}
+
+.benefit_1-section {
+  &__img-block {
+    display: flex;
+    position: relative;
+    height: fit-content;
+    padding-bottom: calc(44px * 2);
+
+    & > * {
+      @for $i from 2 through 3 {
+        &:nth-child(#{$i}) {
+          position: absolute;
+          top: calc(44px * ($i - 1));
+          left: calc(44px * ($i - 1));
+        }
+      }
+    }
+  }
+
+  &__img {
+    &-1 {
+      background-image: url("../assets/images/benefit_1-image-1.png");
+    }
+    &-2 {
+      background-image: url("../assets/images/benefit_1-image-2.png");
+    }
+    &-3 {
+      background-image: url("../assets/images/benefit_1-image-3.png");
+    }
+  }
+}
+
+.benefit_2-section {
+  &__img {
+    background-image: url("../assets/images/benefit_2-image.png");
+    width: 564px;
+    height: 455px;
+  }
+}
+
+.benefit_3-section {
+  &__img-block {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+
+    & > *:nth-child(2) {
+      position: absolute;
+      top: -132px;
+      right: -70px;
+    }
+  }
+
+  &__img {
+    &-1 {
+      background-image: url("../assets/images/benefit_3-image-1.png");
+    }
+    &-2 {
+      background-image: url("../assets/images/benefit_3-image-2.png");
+    }
+  }
+}

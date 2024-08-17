@@ -1,0 +1,81 @@
+.hero-section {
+  &__wrapper {
+    padding-top: 216px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  &__content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 160px;
+  }
+
+  &__content {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__btns-block {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__img {
+    width: 580px;
+    height: 366px;
+    position: relative;
+    background-image: url("../assets/images/hero-image.png");
+
+    &__circle {
+      height: 200px;
+      width: 200px;
+      background-color: $colorQuinary;
+      box-shadow: 0 8px 13px 0 transparentize($colorQuinary, 0.7);
+      border-radius: 50%;
+      position: absolute;
+      left: -76px;
+      top: 96px;
+      z-index: -1;
+    }
+
+    &__rectangle {
+      width: 65px;
+      height: 48px;
+      border-radius: 10px;
+      background-color: $colorPrimary;
+      box-shadow: 0 8px 13px 0 transparentize($colorPrimary, 0.7);
+      position: absolute;
+      right: -24px;
+      bottom: 28px;
+    }
+
+    &__btn {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    & > li {
+      display: flex;
+    }
+  }
+}

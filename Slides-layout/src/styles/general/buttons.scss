@@ -1,0 +1,117 @@
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  @include fontSettings($lHeight: 2.4rem);
+  color: $colorContent;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &--primary {
+    color: $colorContentLight;
+    background-color: $colorPrimary;
+
+    &:hover {
+      background-color: lighten($colorPrimary, 5%);
+    }
+    &:active {
+      background-color: darken($colorPrimary, 10%);
+    }
+  }
+
+  &--secondary {
+    color: $colorContentLight;
+    background-color: $colorSecondary;
+
+    &:hover {
+      background-color: lighten($colorSecondary, 5%);
+    }
+    &:active {
+      background-color: darken($colorSecondary, 10%);
+    }
+  }
+
+  &--tertiary {
+    background-color: $colorTertiary;
+
+    &:hover {
+      background-color: lighten($colorTertiary, 10%);
+    }
+    &:active {
+      background-color: darken($colorTertiary, 5%);
+    }
+  }
+
+  &--quaternary {
+    color: $colorContentLight;
+    background-color: $colorQuaternary;
+
+    &:hover {
+      background-color: lighten($colorQuaternary, 5%);
+    }
+    &:active {
+      background-color: darken($colorQuaternary, 10%);
+    }
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--large {
+    padding: 14px 22px;
+  }
+
+  &--ellipse {
+    border-radius: 20px;
+  }
+}
+
+.switch {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  
+  &__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked {
+      & + .switch__slider {
+        background-color: $colorSecondary;
+        justify-content: flex-end;
+        
+        &::before {
+          right: calc(100% - 3px);
+          transform: translate(100%, -50%);
+        }
+      }
+    }
+  }
+  
+  &__slider {
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lighten($colorContent, 50%);
+    transition: .3s ease;
+
+    &::before {
+      content: "";
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background-color: $colorContentLight;
+      position: absolute;
+      top: 50%;
+      right: 3px;
+      transform: translate(0, -50%);
+      transition: .3s ease;
+    }
+  }
+}
