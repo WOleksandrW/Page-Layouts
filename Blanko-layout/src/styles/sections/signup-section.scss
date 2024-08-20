@@ -1,0 +1,50 @@
+.signup-section {
+  &__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__content {
+    background-color: $colorPrimary;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__greetings {
+    max-width: 480px;
+    margin-left: 40px;
+    gap: 80px;
+  }
+}
+
+.form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px;
+  background-color: $colorBackLight;
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__checkbox-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  &__last-link {
+    text-align: center;
+  }
+}

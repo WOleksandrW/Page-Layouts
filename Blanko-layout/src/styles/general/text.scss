@@ -1,0 +1,62 @@
+.h1 {
+  @include fontSettings(7.2rem);
+}
+
+.h2 {
+  @include fontSettings(5.6rem);
+}
+
+.h3 {
+  @include fontSettings(4rem, 4.8rem);
+}
+
+.h4 {
+  @include fontSettings(3.2rem, 4rem);
+}
+
+.h5 {
+  @include fontSettings(2.4rem, 3.2rem);
+}
+
+.p1 {
+  @include fontSettings(2rem, 3rem);
+}
+
+.p2 {
+  @include fontSettings(1.8rem, 2.8rem);
+}
+
+.p3 {
+  @include fontSettings(1.6rem, 2.4rem);
+}
+
+.link {
+  display: inline-flex;
+  color: $colorContent;
+  transition: color .3s ease;
+  
+  i {
+    transition: color .3s ease;
+  }
+
+  &--light {
+    color: $colorContentLight;
+  }
+
+  &--primary {
+    color: $colorPrimary;
+  }
+
+  &:hover {
+    color: lighten($colorPrimary, 10%);
+  }
+  &:active {
+    color: darken($colorPrimary, 20%);
+  }
+}
+
+.accent {
+  &-opacity {
+    opacity: 0.5;
+  }
+}

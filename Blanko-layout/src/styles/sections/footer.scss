@@ -1,0 +1,63 @@
+.footer {
+  width: 100%;
+  background-color: $colorBack;
+  color: $colorContentLight;
+
+  &__wrapper {
+    padding-top: 64px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  &__logo-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      gap: 16px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__social-link {
+    height: 48px;
+    width: 48px;
+    border-radius: 6px;
+    background-color: transparentize($colorBackLight, 0.9);
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: transparentize($colorPrimary, 0.9);
+    }
+    &:active {
+      background-color: transparentize($colorPrimary, 0.8);
+    }
+  }
+
+  &__hr {
+    border: none;
+    border-bottom: 1px solid transparentize($colorBackLight, 0.8);
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanko</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Logo.svg') %>" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <div class="header__logo-block">
+        <h2 class="logo">blanko</h2>
+        <hr class="header__hr">
+        <p class="p3 header__email">mail@blanko.com</p>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li>
+            <a class="p3 link link--light header__link" href="">
+              Landing
+              <i class="fa fa-long-arrow-down"></i>
+            </a>
+          </li>
+          <li>
+            <a class="p3 link link--light header__link" href="">
+              All pages
+              <i class="fa fa-long-arrow-down"></i>
+            </a>
+          </li>
+          <li>
+            <a class="p3 link link--light header__link" href="">
+              Template
+              <i class="fa fa-long-arrow-down"></i>
+            </a>
+          </li>
+        </ul>
+        <hr class="header__hr">
+        <div class="header__nav__end">
+          <a class="p3 link link--light header__link" href="">
+            Sign up
+            <i class="fa fa-long-arrow-down"></i>
+          </a>
+          <button class="btn btn--small btn--primary">Purchase template</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper hero-section__wrapper">
+        <div class="greetings">
+          <div class="greetings__content">
+            <h1 class="h1">Blanko template</h1>
+            <p class="p2 greetings__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio mauris porttitor amet volutpat.
+            </p>
+            <div class="greetings__btns-block">
+              <button class="btn">Purchase template</button>
+              <button class="btn btn--light">Other templates</button>
+            </div>
+          </div>
+          <div class="greetings__rate">
+            <ul class="rate-list">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+            <h5 class="p1">
+              “Working with the Mabel template has been a breeze from start to finish.”
+            </h5>
+            <p class="p3">Rated 5/5 <span class="accent-opacity">- 129 Reviews</span></p>
+          </div>
+        </div>
+        <div class="hero-section__img"></div>
+      </div>
+    </section>
+    <section id="features-section">
+      <div class="wrapper features-section__wrapper">
+        <ul class="features-section__list">
+          <li class="feature">
+            <div class="feature__img-block">
+              <img src="<%= require('./assets/icons/Feature-1.svg') %>" alt="Speed icon">
+            </div>
+            <div class="feature__content">
+              <h5 class="h5">Speed</h5>
+              <p class="p3">Open a commercial-grade current account from anywhere</p>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature__img-block">
+              <img src="<%= require('./assets/icons/Feature-2.svg') %>" alt="Design icon">
+            </div>
+            <div class="feature__content">
+              <h5 class="h5">Design</h5>
+              <p class="p3">Open a commercial-grade current account from anywhere</p>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature__img-block">
+              <img src="<%= require('./assets/icons/Feature-3.svg') %>" alt="Modularity icon">
+            </div>
+            <div class="feature__content">
+              <h5 class="h5">Modularity</h5>
+              <p class="p3">Open a commercial-grade current account from anywhere</p>
+            </div>
+          </li>
+        </ul>
+        <article id="feature-poster" class="poster">
+          <div class="poster__content">
+            <img src="<%= require('./assets/icons/Druk.svg') %>" alt="DRUK">
+            <h3 class="h3 poster__text">
+              “Join a community of industry leading professionals. Join a community of industry leading professionals.“
+            </h3>
+            <div class="poster__author">
+              <h6 class="p2 js-poster-author-name">Laura Paula</h6>
+              <p class="p3 accent-opacity js-poster-author-job">Director @Company</p>
+            </div>
+            <div class="poster__pagination">
+              <button class="poster__pagination__step active"></button>
+              <button class="poster__pagination__step"></button>
+            </div>
+          </div>
+          <div class="poster__img-block">
+            <img class="poster__img" src="<%= require('./assets/images/feature-image-1.png') %>" alt="Laura Paula">
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="landing-pages-section">
+      <div class="wrapper pages-section__wrapper">
+        <h3 class="h3">Landing pages</h3>
+        <div class="pages-section__list-wrapper">
+          <ul id="landing-pages-list" class="pages-section__list">
+            <div class="p1 pages-section__loading">
+              <div class="loader"></div>
+              Loading...
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="other-pages-section">
+      <div class="wrapper pages-section__wrapper">
+        <h3 class="h3">Other pages</h3>
+        <div class="pages-section__list-wrapper">
+          <ul id="other-pages-list" class="pages-section__list">
+            <div class="p1 pages-section__loading">
+              <div class="loader"></div>
+              Loading...
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="signup-section">
+      <div class="wrapper signup-section__wrapper">
+        <div class="signup-section__content">
+          <div class="greetings signup-section__greetings">
+            <div class="greetings__content">
+              <h2 class="h2">Ready to scale your business?</h1>
+              <p class="p2 greetings__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio mauris porttitor amet volutpat.
+              </p>
+              <div class="greetings__btns-block">
+                <button class="btn">Purchase template</button>
+                <button class="btn btn--light">Other templates</button>
+              </div>
+            </div>
+            <div class="greetings__rate">
+              <ul class="rate-list">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <h5 class="p1">
+                “Working with the Mabel template has been a breeze from start to finish.”
+              </h5>
+              <p class="p3">Rated 5/5 <span class="accent-opacity">- 129 Reviews</span></p>
+            </div>
+          </div>
+          <div class="form">
+            <h4 class="h4 form__title">Sign up for free</h4>
+            <div class="form__input-block">
+              <label class="p3" for="input-email">Your email</label>
+              <input class="input" type="email" placeholder="example@mail.com" name="email" id="input-email">
+            </div>
+            <div class="form__input-block">
+              <label class="p3" for="input-password">Your password</label>
+              <input class="input" type="password" placeholder="*************" name="password" id="input-password">
+            </div>
+            <div class="form__checkbox-block">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" name="privacy" id="input-privacy">
+                <span class="checkbox__btn"></span>
+              </label>
+              <label class="p3" for="input-privacy">I agree to the privacy policy</label>
+            </div>
+            <button class="btn">Submit</button>
+            <p class="p3 form__last-link">
+              Already have an account?
+              <a class="link link--primary" href="">Sign in.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__logo-block">
+        <h2 class="logo">blanko</h2>
+        <button class="btn btn--small btn--light">Get on Webflow</button>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li>
+            <a class="p3 link link--light" href="">Showcase</a>
+          </li>
+          <li>
+            <a class="p3 link link--light" href="">Landing one</a>
+          </li>
+          <li>
+            <a class="p3 link link--light" href="">Sign up</a>
+          </li>
+          <li>
+            <a class="p3 link link--light" href="">Other templates</a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li>
+            <a class="p3 link link--light footer__social-link" href="https://www.instagram.com/" target="_blank">
+              <i class="fa fa-instagram fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="p3 link link--light footer__social-link" href="https://twitter.com/" target="_blank">
+              <i class="fa fa-twitter fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="p3 link link--light footer__social-link" href="https://www.facebook.com/" target="_blank">
+              <i class="fa fa-facebook-f fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="footer__hr">
+      <p class="p3 footer__copy">
+        &copy; 2022 slides Insurance Inc. All Rights Reserved.
+        <a class="link link--light" href="">Contacts</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
