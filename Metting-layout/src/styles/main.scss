@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+@import "./general/text.scss";
+@import "./general/buttons.scss";
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  color: $colorPrimaryDark;
+  max-width: $maxPageWidth;
+  min-width: $minPageWidth;
+  width: 100%;
+
+  &.disable {
+    overflow-y: hidden;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: transparentize(#000000, 0.8);
+  z-index: 1;
+
+  &:not(.active) {
+    display: none;
+  }
+}
+
+.wrapper-1 {
+  padding: 0 $wrapperPadding1;
+
+  @include desktopMedia {
+    padding: 0 $wrapperPadding1Desktop;
+  }
+  
+  @include tabletMedia {
+    padding: 0 $wrapperPaddingTablet;
+  }
+}
+
+.wrapper-2 {
+  padding: 0 $wrapperPadding2;
+  
+  @include desktopMedia {
+    padding: 0 $wrapperPadding2Desktop;
+  }
+  @include tabletMedia {
+    padding: 0 $wrapperPaddingTablet;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @include fontSettings(2rem, 100%);
+
+  &::before {
+    content: "";
+    height: 32px;
+    width: 32px;
+    background-image: url("../assets/icons/Logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--large {
+    font-size: 2.8rem;
+    gap: 12px;
+
+    &::before {
+      height: 44px;
+      width: 44px;
+    }
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+}
+
+.record-icon {
+  display: inline-flex;
+  height: 12px;
+  width: 12px;
+  border: 1px solid $colorDanger;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  
+  &::before {
+    content: "";
+    background-color: $colorDanger;
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+  }
+}
+
+.dotes-matrix {
+  display: grid;
+  @include dotesMatrix(var(--rows), var(--columns), var(--rowGap), var(--colGap), var(--size));
+
+  &__dote {
+    border-radius: 50%;
+    background-color: $colorPrimary;
+  }
+}
+
+@import "./sections/header.scss";
+@import "./sections/footer.scss";
+@import "./sections/hero-section.scss";
+@import "./sections/collaborate-section.scss";
+@import "./sections/features-section.scss";
+@import "./sections/integrate-section.scss";
+@import "./sections/comunicaiton-section.scss";
+@import "./sections/pricing-section.scss";
+@import "./sections/testimonials-section.scss";

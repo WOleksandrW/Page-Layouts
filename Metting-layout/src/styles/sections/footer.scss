@@ -1,0 +1,149 @@
+.footer {
+  width: 100%;
+
+  &__wrapper {
+    padding-top: 120px;
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @include desktopMedia {
+      padding-top: 80px;
+      padding-bottom: 40px;
+      gap: 40px;
+    }
+
+    @include tabletMedia {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      gap: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 55px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+
+    @include desktopMedia {
+      row-gap: 40px;
+      flex-direction: column;
+    }
+
+    @include tabletMedia {
+      row-gap: 24px;
+    }
+  }
+
+  &__about {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__mobile-btns {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__mobile-btn {
+    width: 100px;
+    height: 30px;
+    background-color: $colorPrimaryDark;
+    border-radius: 6px;
+    font-weight: 500;
+    color: $colorContentLight;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    &__icon {
+      height: 20px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      @include fontSettings(7px, 100%);
+      letter-spacing: -0.2px;
+    }
+
+    &__title {
+      @include fontSettings(12px, 100%);
+      letter-spacing: -0.4px;
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    column-gap: 84px;
+    row-gap: 24px;
+
+    @include desktopMedia {
+      column-gap: 40px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include tabletMedia {
+      column-gap: 20px;
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      @include desktopMedia {
+        gap: 20px;
+      }
+
+      @include tabletMedia {
+        gap: 12px;
+      }
+
+      &:last-child {
+        margin-left: auto;
+
+        @include desktopMedia {
+          margin: 0 auto;
+        }
+
+        @include tabletMedia {
+          margin: 0;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      @include tabletMedia {
+        gap: 8px;
+      }
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid transparentize($colorPrimaryDark, 0.9);
+    padding-top: 30px;
+    text-align: center;
+    color: transparentize($colorPrimaryDark, 0.2);
+
+    @include desktopMedia {
+      padding-top: 24px;
+    }
+
+    @include tabletMedia {
+      padding-top: 16px;
+    }
+  }
+}

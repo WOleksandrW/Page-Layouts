@@ -1,0 +1,167 @@
+#testimonials-section {
+  background-color: $colorBack;
+}
+
+.testimonials-section {
+  &__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include desktopMedia {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    
+    @include tabletMedia {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+
+    @include desktopMedia {
+      gap: 40px;
+    }
+
+    @include desktopMedia {
+      gap: 20px;
+      align-items: center;
+    }
+  }
+}
+
+.testimonial {
+  max-width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: filter .15s ease;
+  
+  @include desktopMedia {
+    max-width: 800px;
+    gap: 24px;
+  }
+
+  @include tabletMedia {
+    max-width: 560px;
+    height: 180px;
+  }
+
+  &__text {
+    @include fontSettings(2.4rem, 4.4rem);
+    font-style: italic;
+
+    @include desktopMedia {
+      @include fontSettings(2rem, 3.6rem);
+    }
+
+    @include tabletMedia {
+      @include fontSettings(1.6rem, 2.4rem);
+    }
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &__name {
+      @include fontSettings(2.6rem, 100%);
+
+      @include desktopMedia {
+        font-size: 2.2rem;
+      }
+      
+      @include tabletMedia {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__job {
+      opacity: 0.6;
+    }
+  }
+
+  &.blur {
+    filter: blur(15px);
+  }
+}
+
+.users-circle {
+  width: 450px;
+  height: 450px;
+  position: relative;
+  min-width: 450px;
+
+  @include tabletMedia {
+    width: 400px;
+    height: 400px;
+    min-width: unset;
+  }
+
+  &__inner,
+  &__outer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid $colorContent;
+    border-radius: 50%;
+    transition: all .3s ease;
+  }
+
+  .alt-pos &__outer,
+  &__inner {
+    height: 50%;
+    width: 50%;
+
+    & > * {
+      height: 50px;
+      width: 50px;
+      @include circle($isShift: 1);
+
+      @include desktopMedia {
+        @include circle($isShift: 1, $signTop: 1, $isAlt: 1);
+      }
+    }
+  }
+
+  .alt-pos &__inner,
+  &__outer {
+    height: 86%;
+    width: 86%;
+
+    & > * {
+      height: 72px;
+      width: 72px;
+      @include circle();
+      
+      @include desktopMedia {
+        @include circle($signTop: 1, $isAlt: 1);
+      }
+    }
+  }
+
+  .alt-pos &__outer {
+    z-index: 1;
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 2px solid $colorBackLight;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+    user-select: none;
+  }
+}

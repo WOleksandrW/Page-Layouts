@@ -1,0 +1,116 @@
+.header {
+  position: absolute;
+  overflow-x: clip;
+  width: 100%;
+  max-width: $maxPageWidth;
+  min-width: $minPageWidth;
+  z-index: 2;
+
+  &__wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+
+    @include desktopMedia {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      gap: 20px;
+    }
+
+    @include tabletMedia {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      gap: 36px;
+      justify-content: space-between;
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @include tabletMedia {
+      width: $minPageWidth;
+      height: 100vh;
+      background-color: $colorBackLight;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      position: fixed;
+      z-index: 3;
+      right: 0;
+      top: 0;
+      padding: 20px 32px;
+      gap: 16px;
+      transition: transform .3s ease;
+      
+      &:not(.active-menu) {
+        transform: translate(200%, 0);
+      }
+    }
+
+    &__list {
+      display: flex;
+      gap: 56px;
+
+      @include desktopMedia {
+        gap: 20px;
+      }
+
+      @include tabletMedia {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+
+    &__end {
+      display: flex;
+      align-items: center;
+      gap: 44px;
+
+      @include desktopMedia {
+        gap: 20px;
+      }
+
+      @include tabletMedia {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    &__btn {
+      margin-left: auto;
+      display: none;
+
+      @include tabletMedia {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include tabletMedia {
+      display: block;
+    }
+
+    &:not(.active-menu) {
+      &::before {
+        top: 33%;
+        transform: none;
+      }
+  
+      &::after {
+        top: 66%;
+        width: 75%;
+        transform: none;
+      }
+    }
+  }
+}

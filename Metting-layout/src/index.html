@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="<%= require('./assets/icons/Logo.svg') %>" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper-1 header__wrapper">
+      <h2 class="logo">metting</h2>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li>
+            <a class="p2 link" href="">Home</a>
+          </li>
+          <li>
+            <a class="p2 link" href="">Feature</a>
+          </li>
+          <li>
+            <a class="p2 link" href="">Pricing</a>
+          </li>
+          <li>
+            <a class="p2 link" href="">Solution</a>
+          </li>
+          <li>
+            <a class="p2 link" href="">Faq</a>
+          </li>
+        </ul>
+        <div class="header__nav__end">
+          <a class="p2 link" href="">Sign in</a>
+          <button class="btn btn--dark">Download</button>
+        </div>
+        <button class="btn-cross header__nav__btn"></button>
+      </nav>
+      <button class="btn-cross header__btn"></button>
+    </div>
+  </header>
+  <main class="main">
+    <section id="hero-section">
+      <div class="wrapper-2 hero-section__wrapper">
+        <div class="hero-section__content">
+          <h1 class="h1">The best video online meeting software.</h1>
+          <p class="p2 hero-section__text">
+            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+          </p>
+          <div class="hero-section__btn-block">
+            <button class="btn btn--secondary btn--large-2">Start for free</button>
+          </div>
+        </div>
+        <img class="hero-section__img" src="<%= require('./assets/images/hero-image.png') %>" alt="hero-image">
+      </div>
+    </section>
+    <section id="collaborate-section">
+      <div class="wrapper-2 collaborate-section__wrapper">
+        <div class="collaborate-section__content">
+          <h2 class="h2 collaborate-section__title">
+            Collaborate 2M+ startup and international companies ueses since 2018 
+          </h2>
+          <div class="collaborate-section__info-blocks">
+            <div class="info-block">
+              <h3 class="info-block__title">15k</h3>
+              <div class="info-block__list like">
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-heart"></i>
+              </div>
+              <p class="p3">Active Downloads</p>
+            </div>
+            <div class="info-block">
+              <h3 class="info-block__title">4.9</h3>
+              <div class="info-block__list star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p class="p3">2,938 Rating</p>
+            </div>
+          </div>
+        </div>
+        <ul class="collaborate-section__list">
+          <li>
+            <img src="<%= require('./assets/icons/Airbnb-logo.svg') %>" alt="Airbnb-logo">
+          </li>
+          <li>
+            <img src="<%= require('./assets/icons/Hubspot-logo.svg') %>" alt="Hubspot-logo">
+          </li>
+          <li>
+            <img src="<%= require('./assets/icons/Google-logo.svg') %>" alt="Google-logo">
+          </li>
+          <li>
+            <img src="<%= require('./assets/icons/Microsoft-logo.svg') %>" alt="Microsoft-logo">
+          </li>
+          <li>
+            <img src="<%= require('./assets/icons/Walmart-logo.svg') %>" alt="Walmart-logo">
+          </li>
+          <li>
+            <img src="<%= require('./assets/icons/FedEx-logo.svg') %>" alt="FedEx-logo">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="features-section">
+      <div class="wrapper-2 features-section__wrapper">
+        <div class="features-section__content">
+          <h2 class="h1">Our Special Features</h2>
+          <p class="p3">
+            We are familiar with offline speed dating flow so we designed out online platform considering all the requirements
+          </p>
+        </div>
+        <ul class="features-section__list">
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature-1.svg') %>" alt="Affordable Pricing">
+            <h4 class="p1">Affordable Pricing</h4>
+            <p class="p3 feature__text">
+              A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum
+            </p>
+            <button class="feature__btn">Learn more</button>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature-2.svg') %>" alt="Seamless Reliability">
+            <h4 class="p1">Seamless Reliability</h4>
+            <p class="p3 feature__text">
+              A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum
+            </p>
+            <button class="feature__btn">Learn more</button>
+          </li>
+          <li class="feature">
+            <img class="feature__icon" src="<%= require('./assets/icons/Feature-3.svg') %>" alt="Secure Collaboration">
+            <h4 class="p1">Secure Collaboration</h4>
+            <p class="p3 feature__text">
+              A dictionary of over 200 Latin words,with a handful of model sentence. structures, to generate Lorem Ipsum
+            </p>
+            <button class="feature__btn">Learn more</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="integrate-section">
+      <div class="wrapper-2 integrate-section__wrapper">
+        <div class="integrate-section__content">
+          <h2 class="h2">Integrate with your outlook or gmail calendar</h2>
+          <p class="p3 integrate-section__text">
+            We're here to help you connect, communicate,and express your ideas so you can get more done of together. We're proud to be trusted by millions  enterprises, small businesses, and individuals, just like you.
+          </p>
+          <button class="btn integrate-section__btn">Start for free</button>
+        </div>
+        <img class="integrate-section__img" src="<%= require('./assets/images/integrate-image.png') %>" alt="intagrate-image">
+      </div>
+    </section>
+    <section id="comunicaiton-section">
+      <div class="wrapper-2 comunicaiton-section__wrapper">
+        <div class="illustration">
+          <img class="illustration__user1" src="<%= require('./assets/images/comunication-image-1.png') %>" alt="user 1 image">
+          <img class="illustration__user2" src="<%= require('./assets/images/comunication-image-2.png') %>" alt="user 2 image">
+          <button class="illustration__cancel">
+            <i class="fa fa-phone"></i>
+          </button>
+          <div class="illustration__record">
+            <span class="record-icon"></span>
+            20.21
+          </div>
+          <div class="illustration__weekly">
+            <h6 class="p2">Weekly Metting</h6>
+            <div class="illustration__weekly__list">
+              <img class="illustration__weekly__user" src="<%= require('./assets/images/comunication-image-3.png') %>" alt="user 3 image">
+              <img class="illustration__weekly__user" src="<%= require('./assets/images/comunication-image-4.png') %>" alt="user 4 image">
+              <img class="illustration__weekly__user" src="<%= require('./assets/images/comunication-image-5.png') %>" alt="user 5 image">
+              <img class="illustration__weekly__user" src="<%= require('./assets/images/comunication-image-6.png') %>" alt="user 6 image">
+            </div>
+            <button class="btn btn--small btn--transparent">Join metting</button>
+          </div>
+          <div class="illustration__matrix dotes-matrix"  data-rows="8" data-columns="8" data-size="6" data-row-gap="10" data-col-gap="10"></div>
+        </div>
+        <div class="comunicaiton-section__content">
+          <h2 class="h2">Powering your comunicaiton from anywhere world.</h2>
+          <p class="p3">
+            We're here to help you connect, communicate,and express your ideas so you can get more done of together. We're proud to be trusted by millions  enterprises
+          </p>
+          <ul class="comunicaiton-section__list">
+            <li class="p2 comunicaiton-section__item">
+              Faster than ever
+            </li>
+            <li class="p2 comunicaiton-section__item">
+              Bosts post-metting productivity
+            </li>
+            <li class="p2 comunicaiton-section__item">
+              Enables stronger relationships
+            </li>
+          </ul>
+          <button class="btn">Start Free trail</button>
+        </div>
+      </div>
+    </section>
+    <section id="pricing-section">
+      <div class="wrapper-2 pricing-section__wrapper">
+        <div class="pricing-section__content">
+          <h2 class="h1">Flexible pricing  plan</h2>
+          <p class="p3">
+            We are familiar with offline speed dating flow so we designed out online platform considering all the requirements
+          </p>
+          <label class="switch pricing-section__switch">
+            <input id="price-type-switch" class="switch__input" type="checkbox">
+            <span class="switch__slider"></span>
+            <span class="switch__values p3">
+              <span class="switch__value switch__value-1">Annualy</span>
+              <span class="switch__value switch__value-2">Monthly</span>
+            </span>
+          </label>
+        </div>
+        <ul class="pricing-section__list">
+          <li class="price-item">
+            <div class="price-item__head">
+              <h3 class="price-item__subtitle">Basic</h3>
+              <h2 class="h2">Free</h2>
+            </div>
+            <div class="price-item__body">
+              <ul class="price-item__list">
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 10 users one time
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Secure conversation
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen sharing
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Desktop & mobile access
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 40 minute limit metting
+                </li>
+                <li class="p3 price-item__feature disable">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen Recording
+                </li>
+                <li class="p3 price-item__feature disable">
+                  <i class="fa fa-check price-item__feature__icon"></i> Single Sign-on
+                </li>
+              </ul>
+              <button class="btn btn--transparent">Start Free trial</button>
+            </div>
+          </li>
+          <li class="price-item" data-type="pro">
+            <div class="price-item__head light">
+              <h3 class="price-item__subtitle">Pro</h3>
+              <h2 class="h2 js-price-value">$49<span class="price-item__termin">/mo</span></h2>
+            </div>
+            <div class="price-item__body">
+              <ul class="price-item__list">
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 10 users one time
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Secure conversation
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen sharing
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Desktop & mobile access
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 40 minute limit metting
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen Recording
+                </li>
+                <li class="p3 price-item__feature disable">
+                  <i class="fa fa-check price-item__feature__icon"></i> Single Sign-on
+                </li>
+              </ul>
+              <button class="btn">Start Free trial</button>
+            </div>
+          </li>
+          <li class="price-item" data-type="business">
+            <div class="price-item__head">
+              <h3 class="price-item__subtitle">Business</h3>
+              <h2 class="h2 js-price-value">$99<span class="price-item__termin">/mo</span></h2>
+            </div>
+            <div class="price-item__body">
+              <ul class="price-item__list">
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 10 users one time
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Secure conversation
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen sharing
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Desktop & mobile access
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> 40 minute limit metting
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Screen Recording
+                </li>
+                <li class="p3 price-item__feature">
+                  <i class="fa fa-check price-item__feature__icon"></i> Single Sign-on
+                </li>
+              </ul>
+              <button class="btn btn--transparent">Start Free trial</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="testimonials-section">
+      <div class="wrapper-2 testimonials-section__wrapper">
+        <div class="testimonials-section__content">
+          <h2 class="h2">Testimonial</h2>
+          <div id="testimonial" class="testimonial">
+            <p class="testimonial__text">
+              Here are many variations of passag Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words don't look even slightly believable.
+            </p>
+            <div class="testimonial__author">
+              <h4 class="testimonial__author__name">Cris Gayle</h4>
+              <p class="p3 testimonial__author__job">Manager</p>
+            </div>
+          </div>
+        </div>
+        <div id="users-circle" class="users-circle">
+          <div class="users-circle__outer">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-1.png') %>" alt="user-1">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-2.png') %>" alt="user-2">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-3.png') %>" alt="user-3">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-4.png') %>" alt="user-4">
+          </div>
+          <div class="users-circle__inner">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-5.png') %>" alt="user-5">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-6.png') %>" alt="user-6">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-7.png') %>" alt="user-7">
+            <img class="users-circle__img" src="<%= require('./assets/images/testimonial-user-8.png') %>" alt="user-8">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper-2 footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__about">
+          <h2 class="logo logo--large">metting</h2>
+          <p class="p3">We are familiar with offline our speed dating flow so we.</p>
+          <div class="footer__mobile-btns">
+            <a class="footer__mobile-btn" href="https://play.google.com/store/games" target="_blank">
+              <img class="footer__mobile-btn__icon" src="<%= require('./assets/icons/Google-play.svg') %>" alt="">
+              <span class="footer__mobile-btn__content">
+                <p>ONTDEK HET OP</p>
+                <p class="footer__mobile-btn__title">Google Play</p>
+              </span>
+            </a>
+            <a class="footer__mobile-btn" href="https://apps.apple.com/ru/developer/apple/id284417353" target="_blank">
+              <img class="footer__mobile-btn__icon" src="<%= require('./assets/icons/Apple.svg') %>" alt="">
+              <span class="footer__mobile-btn__content">
+                <p>Available on the</p>
+                <p class="footer__mobile-btn__title">App Store</p>
+              </span>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav__block">
+            <h3 class="p1">Resources</h3>
+            <ul class="footer__nav__list p3">
+              <li>
+                <a class="link" href="">How it works</a>
+              </li>
+              <li>
+                <a class="link" href="">Login</a>
+              </li>
+              <li>
+                <a class="link" href="">Task</a>
+              </li>
+              <li>
+                <a class="link" href="">Blog</a>
+              </li>
+              <li>
+                <a class="link" href="">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav__block">
+            <h3 class="p1">Product</h3>
+            <ul class="footer__nav__list p3">
+              <li>
+                <a class="link" href="">Downlaod apps</a>
+              </li>
+              <li>
+                <a class="link" href="">Help center</a>
+              </li>
+              <li>
+                <a class="link" href="">Blog</a>
+              </li>
+              <li>
+                <a class="link" href="">Careers</a>
+              </li>
+              <li>
+                <a class="link" href="">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav__block">
+            <h3 class="p1">More</h3>
+            <ul class="footer__nav__list p3">
+              <li>
+                <a class="link" href="">Demo</a>
+              </li>
+              <li>
+                <a class="link" href="">Price</a>
+              </li>
+              <li>
+                <a class="link" href="">Business</a>
+              </li>
+              <li>
+                <a class="link" href="">pro</a>
+              </li>
+              <li>
+                <a class="link" href="">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav__block">
+            <h3 class="p1">Contact</h3>
+            <ul class="footer__nav__list p3">
+              <li>
+                Email: <a class="link" href="">admin@spaceit.com</a>
+              </li>
+              <li>
+                Phone: <a class="link" href="">01234 567890</a>
+              </li>
+              <li>
+                Location: Amsterdam Netherlands
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <p class="p3 footer__copyright">Copy right © 2021, All Rights Reserved By Metting</p>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+</body>
+</html>

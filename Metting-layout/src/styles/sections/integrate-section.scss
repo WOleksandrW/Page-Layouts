@@ -1,0 +1,69 @@
+#integrate-section {
+  background-color: transparentize($colorPrimary, 0.95);
+}
+
+.integrate-section {
+  &__wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    @include desktopMedia {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-right: 80px;
+      flex-wrap: wrap;
+    }
+
+    @include tabletMedia {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      padding-right: 24px;
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    @include tabletMedia {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    opacity: 0.6;
+  }
+
+  &__btn {
+    margin-top: 24px;
+
+    @include tabletMedia {
+      margin-top: 0;
+    }
+  }
+
+  &__img {
+    width: 60%;
+    max-width: 690px;
+    margin-left: auto;
+
+    @include desktopMedia {
+      width: 100%;
+    }
+
+    @include tabletMedia {
+      max-width: 400px;
+      margin-left: 0;
+    }
+  }
+}

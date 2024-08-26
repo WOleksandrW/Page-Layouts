@@ -1,0 +1,52 @@
+@mixin fontSettings($fSize: 1.6rem, $lHeight: 2.4rem) {
+  font-size: $fSize;
+  line-height: $lHeight;
+}
+
+@mixin dotesMatrix($rows, $columns, $rowGap, $colGap, $size) {
+  grid-template-columns: repeat($columns, $size);
+  grid-template-rows: repeat($rows, $size);
+  row-gap: $rowGap;
+  column-gap: $colGap;
+}
+
+@mixin circle($size: 4, $isShift: 0, $signTop: -1, $signLeft: -1, $isAlt: 0) {
+  $step: calc(360deg / $size);
+
+  $shift: 0deg;
+  @if $isShift == 1 {
+    $shift: calc(180deg / $size);
+  }
+
+  @for $i from 1 through $size {
+    $angle: $step * ($i - 1);
+    $sin: sin($angle + $shift);
+    $cos: cos($angle + $shift);
+
+    &:nth-child(#{$i}) {
+      $top: $sin;
+      $left: $cos;
+      @if $isAlt == 1 {
+        $top: $cos;
+        $left: $sin;
+      }
+
+      top: calc($signTop * $top * 50% + 50%);
+      left: calc($signLeft * $left * 50% + 50%);
+    }
+  }
+}
+
+@mixin desktopMedia() {
+  @media (max-width: $widthMediaDesktop) {
+    @content();    
+  }
+}
+
+@mixin tabletMedia() {
+  @media (max-width: $widthMediaTablet) {
+    @content();    
+  }
+}
+
+

@@ -1,0 +1,87 @@
+#features-section {
+  .feature {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    @include tabletMedia {
+      gap: 12px;
+    }
+
+    &__icon {
+      width: 72px;
+      margin-bottom: 14px;
+
+      @include desktopMedia {
+        width: 60px;
+      }
+
+      @include tabletMedia {
+        width: 48px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__text {
+      opacity: 0.6;
+    }
+
+    &__btn {
+      margin-top: 16px;
+      @include fontSettings(2rem, 2.4rem);
+      color: $colorPrimaryDark;
+      font-weight: 500;
+      background-color: transparent;
+      border: none;
+
+      @include tabletMedia {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.features-section {
+  &__wrapper {
+    padding-top: 70px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    @include desktopMedia {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+
+    @include tabletMedia {
+      padding-top: 25px;
+      padding-bottom: 40px;
+      gap: 40px;
+    }
+  }
+
+  &__content {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 48px;
+
+    & > * {
+      margin: 0 auto;
+    }
+  }
+}
